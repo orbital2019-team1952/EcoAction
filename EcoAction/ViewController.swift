@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -15,6 +17,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func logOutAction(_ sender: UIButton) {
+        if Auth.auth().currentUser != nil {
+            do {
+                try Auth.auth().signOut()
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Start")
+                present(vc, animated: true, completion: nil)
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+    }
 
 }
 
