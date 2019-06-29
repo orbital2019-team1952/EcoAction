@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="-420" y="457.42128935532236"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="17.541229385307346"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Rxr-Zg-bOv">
             <objects>
-                <viewController id="9Dk-Pf-3hh" sceneMemberID="viewController">
+                <viewController id="9Dk-Pf-3hh" customClass="GameViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2d-lC-VCg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,10 +271,10 @@
             </objects>
             <point key="canvasLocation" x="1676" y="-412"/>
         </scene>
-        <!--View Controller-->
+        <!--Article View Controller-->
         <scene sceneID="Ahz-0P-ncM">
             <objects>
-                <viewController id="ILz-00-LqM" sceneMemberID="viewController">
+                <viewController id="ILz-00-LqM" customClass="ArticleViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KwR-Wu-G8n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="1684" y="369.26536731634184"/>
         </scene>
-        <!--View Controller-->
+        <!--Achievement View Controller-->
         <scene sceneID="C4L-sk-g0d">
             <objects>
-                <viewController id="YV0-Fe-pDs" sceneMemberID="viewController">
+                <viewController id="YV0-Fe-pDs" customClass="AchievementViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eZ9-bQ-W7J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,10 +398,10 @@
             </objects>
             <point key="canvasLocation" x="2432" y="324"/>
         </scene>
-        <!--View Controller-->
+        <!--Action View Controller-->
         <scene sceneID="hOH-uz-89j">
             <objects>
-                <viewController id="54H-uU-RYj" sceneMemberID="viewController">
+                <viewController id="54H-uU-RYj" customClass="ActionViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ADb-kJ-DRn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +446,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="avH-Fe-A0J"/>
+        <segue reference="Qer-DK-l2P"/>
         <segue reference="r9N-zi-p09"/>
     </inferredMetricsTieBreakers>
 </document>
