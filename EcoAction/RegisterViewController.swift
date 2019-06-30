@@ -9,11 +9,14 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController , UITextFieldDelegate{
 
+    @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    var ref: DatabaseReference! = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +37,12 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
     }
     
     @IBAction func createAccountAction(_ sender: UIButton) {
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+        
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        let nickname = nicknameTextField.text
+        
+        Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
             /*if user != nil {
                 let alert = UIAlertController(title: "Email has been used!", message: "Go to log in page", preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -47,7 +55,12 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
                 self.present(alert, animated: true, completion: nil)
             }*/
             
-            if error == nil {
+            guard let userID = Auth.auth().currentUser?.uid else { return }
+    
+            if error == nil && nickname != "" {
+                self.ref.child("users/\(userID)/nickname").setValue(nickname)
+                self.ref.child("users/\(userID)/email").setValue(email)
+                self.ref.child("users/\(userID)/password").setValue(password)
                 self.performSegue(withIdentifier: "signup", sender: self)
             }
             else{

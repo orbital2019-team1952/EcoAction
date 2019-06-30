@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EcoAction/RegisterViewController.swift"
-            timestampString = "580719833.9285361"
+            timestampString = "583569703.045173"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "RegisterViewController"
             landmarkType = "3">
          </BreakpointContent>

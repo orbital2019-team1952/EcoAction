@@ -133,12 +133,20 @@
                                     <segue destination="DKr-h8-3Er" kind="presentation" id="r9N-zi-p09"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nickname" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0s-5U-0Ri">
+                                <rect key="frame" x="71" y="247" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JWu-zJ-nAv"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="EvR-eA-ASy" id="4LG-1g-py5"/>
+                        <outlet property="nicknameTextField" destination="l0s-5U-0Ri" id="YUH-QN-sZZ"/>
                         <outlet property="passwordTextField" destination="6aE-eL-Bzj" id="1sg-3n-Dua"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="signup" id="ZKw-gb-N09"/>
                     </connections>
