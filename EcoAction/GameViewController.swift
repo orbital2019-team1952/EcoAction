@@ -7,24 +7,40 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var nickname: UILabel!
+    @IBOutlet weak var point: UILabel!
+    var ref: DatabaseReference! = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setLabel()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setLabel() {
+        
+        guard let userID = Auth.auth().currentUser?.uid else { return }
+        
+        ref.child("users").child(userID).observe( DataEventType.value, with: { (snapshot) in
+            
+            guard let dict = snapshot.value as? [String:AnyObject] else { return }
+            
+            guard let nicknameText = dict["nickname"] as? String else { return }
+            
+            guard let pointNum = dict["points"] as? Int else { return }
+            
+            self.nickname.text = nicknameText
+            
+            self.point.text = "\(pointNum)"
+        })
+        
     }
-    */
 
 }
