@@ -61,6 +61,7 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
                 self.ref.child("users/\(userID)/nickname").setValue(nickname)
                 self.ref.child("users/\(userID)/email").setValue(email)
                 self.ref.child("users/\(userID)/password").setValue(password)
+                self.ref.child("users/\(userID)/points").setValue(10)
                 self.performSegue(withIdentifier: "signup", sender: self)
             }
             else{
