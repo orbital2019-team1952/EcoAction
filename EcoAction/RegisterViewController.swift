@@ -35,22 +35,10 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
     
     @IBAction func createAccountAction(_ sender: UIButton) {
         Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            /*if user != nil {
-                let alert = UIAlertController(title: "Email has been used!", message: "Go to log in page", preferredStyle: .alert)
-                let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alert.addAction(okButton)
-                self.present(alert, animated: true, completion: nil)
-            } else {
-                let alert = UIAlertController(title: "Error", message: "Please fill in all information.", preferredStyle: .alert)
-                let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alert.addAction(okButton)
-                self.present(alert, animated: true, completion: nil)
-            }*/
             
-            if error == nil {
+              if error == nil {
                 self.performSegue(withIdentifier: "signup", sender: self)
-            }
-            else{
+              } else {
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 

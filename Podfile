@@ -17,5 +17,7 @@ target 'EcoAction' do
     inherit! :search_paths
     # Pods for testing
   end
+  
+  pod 'FlatUIKit'
 
 end

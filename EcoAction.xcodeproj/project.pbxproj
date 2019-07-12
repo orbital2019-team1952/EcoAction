@@ -14,19 +14,19 @@
 		09DC914D22995EF7007C52BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC914B22995EF7007C52BB /* LaunchScreen.storyboard */; };
 		09DC915822995EF7007C52BB /* EcoActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC915722995EF7007C52BB /* EcoActionTests.swift */; };
 		09DC916322995EF7007C52BB /* EcoActionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC916222995EF7007C52BB /* EcoActionUITests.swift */; };
-		09DC917122996549007C52BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09DC917022996549007C52BB /* GoogleService-Info.plist */; };
-		09DC917222996549007C52BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09DC917022996549007C52BB /* GoogleService-Info.plist */; };
-		09DC917322996549007C52BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09DC917022996549007C52BB /* GoogleService-Info.plist */; };
 		09DC9175229BAA3B007C52BB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9174229BAA3B007C52BB /* StartViewController.swift */; };
 		09DC9177229BAD6F007C52BB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9176229BAD6F007C52BB /* LogInViewController.swift */; };
 		09DC9179229BAD8C007C52BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9178229BAD8C007C52BB /* RegisterViewController.swift */; };
 		595B609D8C0049776A61A88F /* Pods_EcoActionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */; };
 		739F7DF074790AACCC978296 /* Pods_EcoActionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */; };
 		7EEBF344DA199F9613A1B026 /* Pods_EcoAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */; };
+		ED1FE3AD22D58FD800F7B6A4 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FE3AC22D58FD800F7B6A4 /* Article.swift */; };
+		ED60C75E22D2EAAF00EC3CE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED60C75D22D2EAAF00EC3CE9 /* GoogleService-Info.plist */; };
 		EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250422C75C680048D3F3 /* GameViewController.swift */; };
 		EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */; };
 		EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250822C75CA10048D3F3 /* ActionViewController.swift */; };
 		EDA5250B22C75CB50048D3F3 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */; };
+		EDE66BD522CF0A27004748FE /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66BD422CF0A27004748FE /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,6 @@
 		09DC915E22995EF7007C52BB /* EcoActionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoActionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC916222995EF7007C52BB /* EcoActionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoActionUITests.swift; sourceTree = "<group>"; };
 		09DC916422995EF7007C52BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09DC917022996549007C52BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09DC9174229BAA3B007C52BB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		09DC9176229BAD6F007C52BB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		09DC9178229BAD8C007C52BB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -72,10 +71,13 @@
 		C855DA0A54081CE22ECE41DA /* Pods-EcoActionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.release.xcconfig"; sourceTree = "<group>"; };
 		D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC631D2B8768CC58E126A530 /* Pods-EcoActionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED1FE3AC22D58FD800F7B6A4 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		ED60C75D22D2EAAF00EC3CE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDA5250422C75C680048D3F3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		EDA5250822C75CA10048D3F3 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		EDE66BD422CF0A27004748FE /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		FB5B5E41BE1BDCB040A325F2 /* Pods-EcoAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoAction.release.xcconfig"; path = "Target Support Files/Pods-EcoAction/Pods-EcoAction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		09DC914122995EF4007C52BB /* EcoAction */ = {
 			isa = PBXGroup;
 			children = (
+				EDE66BD622CF360B004748FE /* Article */,
 				09DC914222995EF4007C52BB /* AppDelegate.swift */,
 				09DC914422995EF4007C52BB /* MenuViewController.swift */,
 				09DC9176229BAD6F007C52BB /* LogInViewController.swift */,
@@ -154,9 +157,8 @@
 				09DC914922995EF7007C52BB /* Assets.xcassets */,
 				09DC914B22995EF7007C52BB /* LaunchScreen.storyboard */,
 				09DC914E22995EF7007C52BB /* Info.plist */,
-				09DC917022996549007C52BB /* GoogleService-Info.plist */,
+				ED60C75D22D2EAAF00EC3CE9 /* GoogleService-Info.plist */,
 				EDA5250422C75C680048D3F3 /* GameViewController.swift */,
-				EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */,
 				EDA5250822C75CA10048D3F3 /* ActionViewController.swift */,
 				EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */,
 			);
@@ -189,6 +191,16 @@
 				A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE66BD622CF360B004748FE /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */,
+				EDE66BD422CF0A27004748FE /* ArticleCell.swift */,
+				ED1FE3AC22D58FD800F7B6A4 /* Article.swift */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DC914D22995EF7007C52BB /* LaunchScreen.storyboard in Resources */,
-				09DC917122996549007C52BB /* GoogleService-Info.plist in Resources */,
+				ED60C75E22D2EAAF00EC3CE9 /* GoogleService-Info.plist in Resources */,
 				09DC914A22995EF7007C52BB /* Assets.xcassets in Resources */,
 				09DC914822995EF4007C52BB /* Main.storyboard in Resources */,
 			);
@@ -310,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09DC917222996549007C52BB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +329,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09DC917322996549007C52BB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +432,10 @@
 				09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */,
 				09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */,
 				EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */,
+				ED1FE3AD22D58FD800F7B6A4 /* Article.swift in Sources */,
 				09DC9175229BAA3B007C52BB /* StartViewController.swift in Sources */,
 				EDA5250B22C75CB50048D3F3 /* AchievementViewController.swift in Sources */,
+				EDE66BD522CF0A27004748FE /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
