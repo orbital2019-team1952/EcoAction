@@ -20,6 +20,8 @@
 		09DC9175229BAA3B007C52BB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9174229BAA3B007C52BB /* StartViewController.swift */; };
 		09DC9177229BAD6F007C52BB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9176229BAD6F007C52BB /* LogInViewController.swift */; };
 		09DC9179229BAD8C007C52BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9178229BAD8C007C52BB /* RegisterViewController.swift */; };
+		09F2194422C9B08A00707AFD /* AddActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2194322C9B08A00707AFD /* AddActionViewController.swift */; };
+		09F2194622E59ACF00707AFD /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2194522E59ACF00707AFD /* CheckButton.swift */; };
 		595B609D8C0049776A61A88F /* Pods_EcoActionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */; };
 		739F7DF074790AACCC978296 /* Pods_EcoActionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */; };
 		7EEBF344DA199F9613A1B026 /* Pods_EcoAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */; };
@@ -65,6 +67,8 @@
 		09DC9174229BAA3B007C52BB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		09DC9176229BAD6F007C52BB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		09DC9178229BAD8C007C52BB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		09F2194322C9B08A00707AFD /* AddActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActionViewController.swift; sourceTree = "<group>"; };
+		09F2194522E59ACF00707AFD /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoActionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1182B56A24BBEBAD720FBD86 /* Pods-EcoAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoAction.debug.xcconfig"; path = "Target Support Files/Pods-EcoAction/Pods-EcoAction.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1B7774838385CA7D61EB08 /* Pods-EcoActionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionUITests/Pods-EcoActionUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				09DC9174229BAA3B007C52BB /* StartViewController.swift */,
 				09DC9178229BAD8C007C52BB /* RegisterViewController.swift */,
 				09DC914622995EF4007C52BB /* Main.storyboard */,
+				09F2194522E59ACF00707AFD /* CheckButton.swift */,
+				09F2194322C9B08A00707AFD /* AddActionViewController.swift */,
 				09DC914922995EF7007C52BB /* Assets.xcassets */,
 				09DC914B22995EF7007C52BB /* LaunchScreen.storyboard */,
 				09DC914E22995EF7007C52BB /* Info.plist */,
@@ -417,12 +423,14 @@
 			files = (
 				09DC9177229BAD6F007C52BB /* LogInViewController.swift in Sources */,
 				09DC9179229BAD8C007C52BB /* RegisterViewController.swift in Sources */,
+				09F2194422C9B08A00707AFD /* AddActionViewController.swift in Sources */,
 				EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */,
 				EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */,
 				09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */,
 				09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */,
 				EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */,
 				09DC9175229BAA3B007C52BB /* StartViewController.swift in Sources */,
+				09F2194622E59ACF00707AFD /* CheckButton.swift in Sources */,
 				EDA5250B22C75CB50048D3F3 /* AchievementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
