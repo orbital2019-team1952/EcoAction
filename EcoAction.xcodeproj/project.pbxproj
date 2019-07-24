@@ -22,9 +22,9 @@
 		595B609D8C0049776A61A88F /* Pods_EcoActionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */; };
 		739F7DF074790AACCC978296 /* Pods_EcoActionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */; };
 		7EEBF344DA199F9613A1B026 /* Pods_EcoAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */; };
-		ED21AF5622E8777900BC74AC /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF5522E8777800BC74AC /* ArticleCell.swift */; };
-		ED21AF5822E8778200BC74AC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF5722E8778200BC74AC /* Article.swift */; };
 		ED21AF5E22E884BE00BC74AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */; };
+		ED21AF6322E88A4B00BC74AC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF6122E88A4B00BC74AC /* Article.swift */; };
+		ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF6222E88A4B00BC74AC /* ArticleCell.swift */; };
 		EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250422C75C680048D3F3 /* GameViewController.swift */; };
 		EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */; };
 		EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250822C75CA10048D3F3 /* ActionViewController.swift */; };
@@ -75,9 +75,9 @@
 		C855DA0A54081CE22ECE41DA /* Pods-EcoActionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.release.xcconfig"; sourceTree = "<group>"; };
 		D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC631D2B8768CC58E126A530 /* Pods-EcoActionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED21AF5522E8777800BC74AC /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleCell.swift; path = "../../../EcoAction copy/EcoAction/Article/ArticleCell.swift"; sourceTree = "<group>"; };
-		ED21AF5722E8778200BC74AC /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = "../../../EcoAction copy/EcoAction/Article/Article.swift"; sourceTree = "<group>"; };
 		ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED21AF6122E88A4B00BC74AC /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		ED21AF6222E88A4B00BC74AC /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		EDA5250422C75C680048D3F3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		EDA5250822C75CA10048D3F3 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
@@ -203,8 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */,
-				ED21AF5522E8777800BC74AC /* ArticleCell.swift */,
-				ED21AF5722E8778200BC74AC /* Article.swift */,
+				ED21AF6122E88A4B00BC74AC /* Article.swift */,
+				ED21AF6222E88A4B00BC74AC /* ArticleCell.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -431,7 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED21AF5822E8778200BC74AC /* Article.swift in Sources */,
 				09DC9177229BAD6F007C52BB /* LogInViewController.swift in Sources */,
 				09DC9179229BAD8C007C52BB /* RegisterViewController.swift in Sources */,
 				09F2194422C9B08A00707AFD /* AddActionViewController.swift in Sources */,
@@ -439,8 +438,9 @@
 				EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */,
 				09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */,
 				09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */,
+				ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */,
 				EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */,
-				ED21AF5622E8777900BC74AC /* ArticleCell.swift in Sources */,
+				ED21AF6322E88A4B00BC74AC /* Article.swift in Sources */,
 				09DC9175229BAA3B007C52BB /* StartViewController.swift in Sources */,
 				09F2194622E59ACF00707AFD /* CheckButton.swift in Sources */,
 				EDA5250B22C75CB50048D3F3 /* AchievementViewController.swift in Sources */,
