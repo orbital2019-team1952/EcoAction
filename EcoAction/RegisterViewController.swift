@@ -55,18 +55,19 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
                 self.present(alert, animated: true, completion: nil)
             }*/
             
-            guard let userID = Auth.auth().currentUser?.uid else { return }
+            
     
             if error == nil && nickname != "" {
+                guard let userID = Auth.auth().currentUser?.uid else { return } // cannot put it when there is error
+                
                 self.ref.child("users/\(userID)/nickname").setValue(nickname)
                 self.ref.child("users/\(userID)/email").setValue(email)
                 self.ref.child("users/\(userID)/password").setValue(password)
                 self.ref.child("users/\(userID)/points").setValue(10)
                 self.performSegue(withIdentifier: "signup", sender: self)
-            }
-            else{
+            } else {
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 
                 alertController.addAction(defaultAction)
                 self.present(alertController, animated: true, completion: nil)

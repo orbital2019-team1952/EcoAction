@@ -115,7 +115,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Bg-6KD">
                                 <rect key="frame" x="160" y="512" width="54" height="30"/>
@@ -613,7 +613,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="riN-qd-RPf"/>
-        <segue reference="Qer-DK-l2P"/>
+        <segue reference="ZKw-gb-N09"/>
         <segue reference="r9N-zi-p09"/>
     </inferredMetricsTieBreakers>
 </document>
