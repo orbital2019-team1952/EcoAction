@@ -500,19 +500,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm0-kR-CSd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm0-kR-CSd">
                                 <rect key="frame" x="39" y="617" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancal"/>
                                 <connections>
                                     <segue destination="54H-uU-RYj" kind="show" identifier="GoToAction" id="riN-qd-RPf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-Mw-8Se">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-Mw-8Se">
                                 <rect key="frame" x="303" y="617" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
+                                    <action selector="addTodayAction" destination="OQG-Hf-GcW" eventType="touchUpInside" id="NtD-qQ-j2O"/>
                                     <segue destination="54H-uU-RYj" kind="show" identifier="AddAction" id="06T-BY-Ghy"/>
                                 </connections>
                             </button>
@@ -593,6 +592,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MrE-Mw-8Se" secondAttribute="bottom" constant="20" symbolic="YES" id="GxA-pi-R3N"/>
+                            <constraint firstItem="MrE-Mw-8Se" firstAttribute="leading" secondItem="yuD-T4-R65" secondAttribute="leading" constant="303" id="Uf6-d8-8Zf"/>
+                            <constraint firstItem="MrE-Mw-8Se" firstAttribute="baseline" secondItem="wm0-kR-CSd" secondAttribute="baseline" id="eVt-eG-Ehg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yuD-T4-R65"/>
                     </view>
                     <connections>
