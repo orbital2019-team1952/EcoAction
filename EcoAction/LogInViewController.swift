@@ -9,16 +9,17 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import TweeTextField
 
 class LogInViewController: UIViewController , UITextFieldDelegate{
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: TweePlaceholderTextField!
+    @IBOutlet weak var passwordTextField: TweePlaceholderTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.text = "Email"
-        passwordTextField.text = "Password"
+        //emailTextField.text = "Email"
+        //passwordTextField.text = "Password"
         emailTextField.delegate = self
         passwordTextField.delegate = self
         // Do any additional setup after loading the view.

@@ -13,6 +13,14 @@ import FirebaseDatabase
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var yellowBag1: PlasticButton!
+    @IBOutlet weak var yellowBag2: PlasticButton!
+    @IBOutlet weak var bottleBag1: PlasticButton!
+    @IBOutlet weak var bottleBag2: PlasticButton!
+    @IBOutlet weak var cup1: PlasticButton!
+    @IBOutlet weak var cup2: PlasticButton!
+    
+    
     @IBOutlet weak var nickname: UILabel!
     @IBOutlet weak var point: UILabel!
     var ref: DatabaseReference! = Database.database().reference()
@@ -42,5 +50,7 @@ class GameViewController: UIViewController {
         })
         
     }
+    
+    
 
 }

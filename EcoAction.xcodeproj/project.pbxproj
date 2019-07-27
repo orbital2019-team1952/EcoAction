@@ -19,12 +19,13 @@
 		09DC9179229BAD8C007C52BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC9178229BAD8C007C52BB /* RegisterViewController.swift */; };
 		09F2194422C9B08A00707AFD /* AddActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2194322C9B08A00707AFD /* AddActionViewController.swift */; };
 		09F2194622E59ACF00707AFD /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F2194522E59ACF00707AFD /* CheckButton.swift */; };
-		595B609D8C0049776A61A88F /* Pods_EcoActionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */; };
-		739F7DF074790AACCC978296 /* Pods_EcoActionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */; };
+		5430B68E9C882A788C3B7A3F /* Pods_EcoActionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F870A1A6F589BA24774F0916 /* Pods_EcoActionTests.framework */; };
 		7EEBF344DA199F9613A1B026 /* Pods_EcoAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */; };
+		DF851CA4A2D0BB704EAC4E1E /* Pods_EcoActionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1365A9F19FADCE48B9E12145 /* Pods_EcoActionUITests.framework */; };
 		ED21AF5E22E884BE00BC74AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */; };
 		ED21AF6322E88A4B00BC74AC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF6122E88A4B00BC74AC /* Article.swift */; };
 		ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF6222E88A4B00BC74AC /* ArticleCell.swift */; };
+		ED21AF6722EB23CA00BC74AC /* PlasticButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21AF6622EB23CA00BC74AC /* PlasticButton.swift */; };
 		EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250422C75C680048D3F3 /* GameViewController.swift */; };
 		EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */; };
 		EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5250822C75CA10048D3F3 /* ActionViewController.swift */; };
@@ -49,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DD4B1560EF3FA468BB5A78 /* Pods-EcoActionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoActionUITests/Pods-EcoActionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		09DC913F22995EF4007C52BB /* EcoAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC914222995EF4007C52BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DC914422995EF4007C52BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -68,20 +68,22 @@
 		09DC9178229BAD8C007C52BB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		09F2194322C9B08A00707AFD /* AddActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActionViewController.swift; sourceTree = "<group>"; };
 		09F2194522E59ACF00707AFD /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
-		10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoActionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1182B56A24BBEBAD720FBD86 /* Pods-EcoAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoAction.debug.xcconfig"; path = "Target Support Files/Pods-EcoAction/Pods-EcoAction.debug.xcconfig"; sourceTree = "<group>"; };
-		1B1B7774838385CA7D61EB08 /* Pods-EcoActionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionUITests/Pods-EcoActionUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoActionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C855DA0A54081CE22ECE41DA /* Pods-EcoActionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.release.xcconfig"; sourceTree = "<group>"; };
+		1365A9F19FADCE48B9E12145 /* Pods_EcoActionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoActionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		136B83B090DA42F01C8937FB /* Pods-EcoActionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionUITests/Pods-EcoActionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		22817524E57FE16CF313E0C4 /* Pods-EcoActionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B342D554C7077F46C9984F62 /* Pods-EcoActionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoActionUITests/Pods-EcoActionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC631D2B8768CC58E126A530 /* Pods-EcoActionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED21AF6122E88A4B00BC74AC /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		ED21AF6222E88A4B00BC74AC /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		ED21AF6622EB23CA00BC74AC /* PlasticButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticButton.swift; sourceTree = "<group>"; };
 		EDA5250422C75C680048D3F3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EDA5250622C75C8C0048D3F3 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		EDA5250822C75CA10048D3F3 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		F3B61513459F7FDAB5B67D80 /* Pods-EcoActionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoActionTests.release.xcconfig"; path = "Target Support Files/Pods-EcoActionTests/Pods-EcoActionTests.release.xcconfig"; sourceTree = "<group>"; };
+		F870A1A6F589BA24774F0916 /* Pods_EcoActionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoActionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5B5E41BE1BDCB040A325F2 /* Pods-EcoAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoAction.release.xcconfig"; path = "Target Support Files/Pods-EcoAction/Pods-EcoAction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739F7DF074790AACCC978296 /* Pods_EcoActionTests.framework in Frameworks */,
+				5430B68E9C882A788C3B7A3F /* Pods_EcoActionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595B609D8C0049776A61A88F /* Pods_EcoActionUITests.framework in Frameworks */,
+				DF851CA4A2D0BB704EAC4E1E /* Pods_EcoActionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +120,10 @@
 			children = (
 				1182B56A24BBEBAD720FBD86 /* Pods-EcoAction.debug.xcconfig */,
 				FB5B5E41BE1BDCB040A325F2 /* Pods-EcoAction.release.xcconfig */,
-				DC631D2B8768CC58E126A530 /* Pods-EcoActionTests.debug.xcconfig */,
-				C855DA0A54081CE22ECE41DA /* Pods-EcoActionTests.release.xcconfig */,
-				00DD4B1560EF3FA468BB5A78 /* Pods-EcoActionUITests.debug.xcconfig */,
-				1B1B7774838385CA7D61EB08 /* Pods-EcoActionUITests.release.xcconfig */,
+				22817524E57FE16CF313E0C4 /* Pods-EcoActionTests.debug.xcconfig */,
+				F3B61513459F7FDAB5B67D80 /* Pods-EcoActionTests.release.xcconfig */,
+				B342D554C7077F46C9984F62 /* Pods-EcoActionUITests.debug.xcconfig */,
+				136B83B090DA42F01C8937FB /* Pods-EcoActionUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 		09DC914122995EF4007C52BB /* EcoAction */ = {
 			isa = PBXGroup;
 			children = (
+				ED21AF6522E9EA3500BC74AC /* Game */,
 				ED21AF5422E876FC00BC74AC /* New Group */,
 				09DC914222995EF4007C52BB /* AppDelegate.swift */,
 				09DC914422995EF4007C52BB /* MenuViewController.swift */,
@@ -164,7 +167,6 @@
 				09DC914B22995EF7007C52BB /* LaunchScreen.storyboard */,
 				ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */,
 				09DC914E22995EF7007C52BB /* Info.plist */,
-				EDA5250422C75C680048D3F3 /* GameViewController.swift */,
 				EDA5250822C75CA10048D3F3 /* ActionViewController.swift */,
 				EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */,
 			);
@@ -193,8 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				D63FC25C8424B03A816336AE /* Pods_EcoAction.framework */,
-				10B12BB9A849908015D64320 /* Pods_EcoActionTests.framework */,
-				A00779D6A381CE288966D4C2 /* Pods_EcoActionUITests.framework */,
+				F870A1A6F589BA24774F0916 /* Pods_EcoActionTests.framework */,
+				1365A9F19FADCE48B9E12145 /* Pods_EcoActionUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +209,15 @@
 				ED21AF6222E88A4B00BC74AC /* ArticleCell.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		ED21AF6522E9EA3500BC74AC /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				EDA5250422C75C680048D3F3 /* GameViewController.swift */,
+				ED21AF6622EB23CA00BC74AC /* PlasticButton.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09DC916A22995EF7007C52BB /* Build configuration list for PBXNativeTarget "EcoActionTests" */;
 			buildPhases = (
-				E98EC33D1957E828DF934AD4 /* [CP] Check Pods Manifest.lock */,
+				D7D5F58BDC3B88674ED13F2F /* [CP] Check Pods Manifest.lock */,
 				09DC914F22995EF7007C52BB /* Sources */,
 				09DC915022995EF7007C52BB /* Frameworks */,
 				09DC915122995EF7007C52BB /* Resources */,
@@ -254,7 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09DC916D22995EF7007C52BB /* Build configuration list for PBXNativeTarget "EcoActionUITests" */;
 			buildPhases = (
-				66CBF3DE6F4D24BDA04745F8 /* [CP] Check Pods Manifest.lock */,
+				2D93D2E95A1522CCF1B2456F /* [CP] Check Pods Manifest.lock */,
 				09DC915A22995EF7007C52BB /* Sources */,
 				09DC915B22995EF7007C52BB /* Frameworks */,
 				09DC915C22995EF7007C52BB /* Resources */,
@@ -341,7 +352,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		66CBF3DE6F4D24BDA04745F8 /* [CP] Check Pods Manifest.lock */ = {
+		2D93D2E95A1522CCF1B2456F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,7 +391,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoAction/Pods-EcoAction-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E98EC33D1957E828DF934AD4 /* [CP] Check Pods Manifest.lock */ = {
+		D7D5F58BDC3B88674ED13F2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,6 +448,7 @@
 				EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */,
 				EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */,
 				09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */,
+				ED21AF6722EB23CA00BC74AC /* PlasticButton.swift in Sources */,
 				09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */,
 				ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */,
 				EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */,
@@ -654,7 +666,7 @@
 		};
 		09DC916B22995EF7007C52BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC631D2B8768CC58E126A530 /* Pods-EcoActionTests.debug.xcconfig */;
+			baseConfigurationReference = 22817524E57FE16CF313E0C4 /* Pods-EcoActionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -676,7 +688,7 @@
 		};
 		09DC916C22995EF7007C52BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C855DA0A54081CE22ECE41DA /* Pods-EcoActionTests.release.xcconfig */;
+			baseConfigurationReference = F3B61513459F7FDAB5B67D80 /* Pods-EcoActionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -698,7 +710,7 @@
 		};
 		09DC916E22995EF7007C52BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00DD4B1560EF3FA468BB5A78 /* Pods-EcoActionUITests.debug.xcconfig */;
+			baseConfigurationReference = B342D554C7077F46C9984F62 /* Pods-EcoActionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -719,7 +731,7 @@
 		};
 		09DC916F22995EF7007C52BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B1B7774838385CA7D61EB08 /* Pods-EcoActionUITests.release.xcconfig */;
+			baseConfigurationReference = 136B83B090DA42F01C8937FB /* Pods-EcoActionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

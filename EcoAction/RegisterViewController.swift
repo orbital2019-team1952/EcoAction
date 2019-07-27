@@ -20,8 +20,8 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.text = "Email"
-        passwordTextField.text = "Password"
+        //emailTextField.text = "Email"
+        //passwordTextField.text = "Password"
         emailTextField.delegate = self
         passwordTextField.delegate = self
         // Do any additional setup after loading the view.

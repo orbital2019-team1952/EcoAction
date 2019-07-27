@@ -18,30 +18,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHw-zg-c7E">
-                                <rect key="frame" x="166" y="380" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <segue destination="cSE-R4-bQR" kind="presentation" id="QkE-B9-2zf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-pK-E3a">
-                                <rect key="frame" x="159" y="429" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-pK-E3a" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="131" y="491" width="113" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="m02-Vh-n5X" kind="presentation" id="QJJ-Gm-SPD"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Eco Action" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsj-7M-Wnk">
+                                <rect key="frame" x="78" y="107" width="219" height="55"/>
+                                <color key="textColor" red="0.098667241632938385" green="0.53676331043243408" blue="0.091478385031223297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="42"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planet-earth" translatesAutoresizingMaskIntoConstraints="NO" id="0KJ-5i-qWz">
+                                <rect key="frame" x="67" y="220" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHw-zg-c7E" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="140" y="407" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cSE-R4-bQR" kind="presentation" id="QkE-B9-2zf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="trailing" secondItem="0KJ-5i-qWz" secondAttribute="trailing" constant="68" id="8E4-YN-BcO"/>
+                            <constraint firstItem="bfe-pK-E3a" firstAttribute="top" secondItem="SHw-zg-c7E" secondAttribute="bottom" constant="54" id="BjG-p8-S0y"/>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="trailing" secondItem="SHw-zg-c7E" secondAttribute="trailing" constant="141" id="I94-W6-uWU"/>
+                            <constraint firstItem="bfe-pK-E3a" firstAttribute="leading" secondItem="LMW-qd-6Xm" secondAttribute="leading" constant="131" id="IUE-AX-j4C"/>
+                            <constraint firstItem="dsj-7M-Wnk" firstAttribute="leading" secondItem="LMW-qd-6Xm" secondAttribute="leading" constant="78" id="Ir8-qO-Keb"/>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="bottom" secondItem="SHw-zg-c7E" secondAttribute="bottom" constant="230" id="NCD-c0-hbW"/>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="bottom" secondItem="bfe-pK-E3a" secondAttribute="bottom" constant="146" id="Sy8-CL-fg9"/>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="bottom" secondItem="0KJ-5i-qWz" secondAttribute="bottom" constant="319" id="Vf1-Cf-t9e"/>
+                            <constraint firstItem="0KJ-5i-qWz" firstAttribute="leading" secondItem="LMW-qd-6Xm" secondAttribute="leading" constant="67" id="aMZ-xM-dnx"/>
+                            <constraint firstItem="SHw-zg-c7E" firstAttribute="top" secondItem="0KJ-5i-qWz" secondAttribute="bottom" constant="59" id="btM-0o-iIP"/>
+                            <constraint firstItem="SHw-zg-c7E" firstAttribute="leading" secondItem="LMW-qd-6Xm" secondAttribute="leading" constant="140" id="deg-Jl-wLy"/>
+                            <constraint firstItem="0KJ-5i-qWz" firstAttribute="top" secondItem="dsj-7M-Wnk" secondAttribute="bottom" constant="58" id="jpB-tH-Fr8"/>
+                            <constraint firstItem="dsj-7M-Wnk" firstAttribute="top" secondItem="LMW-qd-6Xm" secondAttribute="top" constant="87" id="oB7-7W-2aj"/>
+                            <constraint firstItem="0KJ-5i-qWz" firstAttribute="top" secondItem="LMW-qd-6Xm" secondAttribute="top" constant="200" id="p46-VL-uEE"/>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="trailing" secondItem="bfe-pK-E3a" secondAttribute="trailing" constant="131" id="vtj-eR-fQr"/>
+                            <constraint firstItem="LMW-qd-6Xm" firstAttribute="trailing" secondItem="dsj-7M-Wnk" secondAttribute="trailing" constant="78" id="zht-JY-EUz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LMW-qd-6Xm"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZX-ou-GRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1265" y="65"/>
+            <point key="canvasLocation" x="-1266.4000000000001" y="64.31784107946028"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="a0Y-LC-9Dd">
@@ -51,38 +94,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WS7-c3-oNE">
-                                <rect key="frame" x="91" y="318" width="193" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WS7-c3-oNE" customClass="TweePlaceholderTextField" customModule="TweeTextField">
+                                <rect key="frame" x="91" y="302" width="193" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" smartDashesType="yes" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.098667241632938385" green="0.53676331043243408" blue="0.091478385031223297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email Address"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I67-Nn-drd">
-                                <rect key="frame" x="91" y="382" width="193" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="I67-Nn-drd" customClass="TweePlaceholderTextField" customModule="TweeTextField">
+                                <rect key="frame" x="91" y="394" width="193" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.098667241632938385" green="0.53676331043243408" blue="0.091478385031223297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D34-gm-gO5">
-                                <rect key="frame" x="166" y="515" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <action selector="loginButton:" destination="cSE-R4-bQR" eventType="touchUpInside" id="G4F-Hy-j7L"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rQ-QF-xEu">
-                                <rect key="frame" x="53" y="606" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rQ-QF-xEu" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="40" y="602" width="65" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="DKr-h8-3Er" kind="presentation" id="uhb-ab-p8M"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-Fh-N5Q">
+                                <rect key="frame" x="67" y="103" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D34-gm-gO5" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="141" y="502" width="93" height="30"/>
+                                <state key="normal" title="Log In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButton:" destination="cSE-R4-bQR" eventType="touchUpInside" id="G4F-Hy-j7L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qhp-Fh-N5Q" firstAttribute="top" secondItem="izj-qQ-U1q" secondAttribute="top" constant="83" id="1mU-N8-VMA"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="trailing" secondItem="WS7-c3-oNE" secondAttribute="trailing" constant="91" id="2Kf-Se-ASY"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="bottom" secondItem="I67-Nn-drd" secondAttribute="bottom" constant="243" id="B24-LI-U0o"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="bottom" secondItem="WS7-c3-oNE" secondAttribute="bottom" constant="335" id="B2g-ba-O1F"/>
+                            <constraint firstItem="qhp-Fh-N5Q" firstAttribute="leading" secondItem="izj-qQ-U1q" secondAttribute="leading" constant="67" id="GFj-ST-zIx"/>
+                            <constraint firstItem="I67-Nn-drd" firstAttribute="top" secondItem="WS7-c3-oNE" secondAttribute="bottom" constant="62" id="GFz-v3-aaA"/>
+                            <constraint firstItem="D34-gm-gO5" firstAttribute="top" secondItem="I67-Nn-drd" secondAttribute="bottom" constant="78" id="HD0-hQ-qq2"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="bottom" secondItem="0rQ-QF-xEu" secondAttribute="bottom" constant="35" id="Nl5-Il-22U"/>
+                            <constraint firstItem="0rQ-QF-xEu" firstAttribute="leading" secondItem="izj-qQ-U1q" secondAttribute="leading" constant="40" id="OrS-TO-H76"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="trailing" secondItem="D34-gm-gO5" secondAttribute="trailing" constant="141" id="Rjc-wr-rV4"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="bottom" secondItem="D34-gm-gO5" secondAttribute="bottom" constant="135" id="RyM-7M-dSY"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="bottom" secondItem="qhp-Fh-N5Q" secondAttribute="bottom" constant="436" id="SgL-kb-ryE"/>
+                            <constraint firstItem="D34-gm-gO5" firstAttribute="leading" secondItem="izj-qQ-U1q" secondAttribute="leading" constant="141" id="X8S-jb-m4m"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="trailing" secondItem="I67-Nn-drd" secondAttribute="trailing" constant="91" id="XIj-XR-6KN"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="trailing" secondItem="qhp-Fh-N5Q" secondAttribute="trailing" constant="68" id="eR8-IC-8eL"/>
+                            <constraint firstItem="WS7-c3-oNE" firstAttribute="leading" secondItem="izj-qQ-U1q" secondAttribute="leading" constant="91" id="h34-sM-rcr"/>
+                            <constraint firstItem="WS7-c3-oNE" firstAttribute="top" secondItem="qhp-Fh-N5Q" secondAttribute="bottom" constant="71" id="kaC-Ld-20Y"/>
+                            <constraint firstItem="0rQ-QF-xEu" firstAttribute="top" secondItem="izj-qQ-U1q" secondAttribute="top" constant="582" id="qlL-7a-Mdt"/>
+                            <constraint firstItem="I67-Nn-drd" firstAttribute="leading" secondItem="izj-qQ-U1q" secondAttribute="leading" constant="91" id="sp9-q7-3cd"/>
+                            <constraint firstItem="izj-qQ-U1q" firstAttribute="trailing" secondItem="0rQ-QF-xEu" secondAttribute="trailing" constant="270" id="tt6-Dq-3PW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="izj-qQ-U1q"/>
                     </view>
                     <connections>
@@ -103,45 +195,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EvR-eA-ASy">
-                                <rect key="frame" x="71" y="330" width="233" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EvR-eA-ASy" customClass="TweePlaceholderTextField" customModule="TweeTextField">
+                                <rect key="frame" x="71" y="327" width="233" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email Address"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.098667241632938385" green="0.53676331043243408" blue="0.091478385031223297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aE-eL-Bzj">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aE-eL-Bzj" customClass="TweePlaceholderTextField" customModule="TweeTextField">
                                 <rect key="frame" x="71" y="410" width="233" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.098667241632938385" green="0.53676331043243408" blue="0.091478385031223297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Bg-6KD">
-                                <rect key="frame" x="160" y="512" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Bg-6KD" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="141" y="512" width="93" height="30"/>
                                 <state key="normal" title="Sign Up"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="createAccountAction:" destination="m02-Vh-n5X" eventType="touchUpInside" id="dKE-Oa-rjx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-bc-Wj0">
-                                <rect key="frame" x="37" y="605" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-bc-Wj0" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="40" y="602" width="65" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="DKr-h8-3Er" kind="presentation" id="r9N-zi-p09"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nickname" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0s-5U-0Ri">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0s-5U-0Ri" customClass="TweePlaceholderTextField" customModule="TweeTextField">
                                 <rect key="frame" x="71" y="247" width="233" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="nickname"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Nickname"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.098667241632938385" green="0.53676331043243408" blue="0.091478385031223297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle-1" translatesAutoresizingMaskIntoConstraints="NO" id="P5X-9C-cbe">
+                                <rect key="frame" x="67" y="71" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l0s-5U-0Ri" firstAttribute="top" secondItem="P5X-9C-cbe" secondAttribute="bottom" constant="48" id="1kN-2d-F1q"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="trailing" secondItem="oxe-bc-Wj0" secondAttribute="trailing" constant="270" id="7Um-H4-13N"/>
+                            <constraint firstItem="l0s-5U-0Ri" firstAttribute="leading" secondItem="JWu-zJ-nAv" secondAttribute="leading" constant="71" id="8vi-i8-KU5"/>
+                            <constraint firstItem="EvR-eA-ASy" firstAttribute="top" secondItem="l0s-5U-0Ri" secondAttribute="bottom" constant="50" id="9VZ-bd-FLG"/>
+                            <constraint firstItem="6aE-eL-Bzj" firstAttribute="top" secondItem="EvR-eA-ASy" secondAttribute="bottom" constant="50" id="A6c-tR-EeA"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="bottom" secondItem="oxe-bc-Wj0" secondAttribute="bottom" constant="35" id="G9I-r4-d1P"/>
+                            <constraint firstItem="6aE-eL-Bzj" firstAttribute="leading" secondItem="JWu-zJ-nAv" secondAttribute="leading" constant="71" id="Ni0-Us-lc8"/>
+                            <constraint firstItem="EvR-eA-ASy" firstAttribute="leading" secondItem="JWu-zJ-nAv" secondAttribute="leading" constant="71" id="O4t-yU-6nM"/>
+                            <constraint firstItem="VH9-Bg-6KD" firstAttribute="leading" secondItem="JWu-zJ-nAv" secondAttribute="leading" constant="141" id="OI4-DV-Cc5"/>
+                            <constraint firstItem="oxe-bc-Wj0" firstAttribute="top" secondItem="JWu-zJ-nAv" secondAttribute="top" constant="582" id="OjP-7P-0uY"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="trailing" secondItem="EvR-eA-ASy" secondAttribute="trailing" constant="71" id="TMV-OQ-igI"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="bottom" secondItem="P5X-9C-cbe" secondAttribute="bottom" constant="468" id="VNq-54-nuU"/>
+                            <constraint firstItem="VH9-Bg-6KD" firstAttribute="top" secondItem="6aE-eL-Bzj" secondAttribute="bottom" constant="72" id="VdA-rL-zt1"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="trailing" secondItem="P5X-9C-cbe" secondAttribute="trailing" constant="68" id="WaW-Iz-Xnt"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="bottom" secondItem="EvR-eA-ASy" secondAttribute="bottom" constant="307" id="YY6-jt-cXI"/>
+                            <constraint firstItem="P5X-9C-cbe" firstAttribute="leading" secondItem="JWu-zJ-nAv" secondAttribute="leading" constant="67" id="bA6-xZ-IPM"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="bottom" secondItem="VH9-Bg-6KD" secondAttribute="bottom" constant="125" id="cqy-yz-nRE"/>
+                            <constraint firstItem="P5X-9C-cbe" firstAttribute="top" secondItem="JWu-zJ-nAv" secondAttribute="top" constant="51" id="f98-gv-a0X"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="trailing" secondItem="VH9-Bg-6KD" secondAttribute="trailing" constant="141" id="gTI-GM-xsO"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="trailing" secondItem="l0s-5U-0Ri" secondAttribute="trailing" constant="71" id="lMB-ej-jLL"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="trailing" secondItem="6aE-eL-Bzj" secondAttribute="trailing" constant="71" id="tXM-xP-Rw5"/>
+                            <constraint firstItem="oxe-bc-Wj0" firstAttribute="leading" secondItem="JWu-zJ-nAv" secondAttribute="leading" constant="40" id="tZD-CP-f2H"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="bottom" secondItem="l0s-5U-0Ri" secondAttribute="bottom" constant="390" id="ufH-QK-qui"/>
+                            <constraint firstItem="JWu-zJ-nAv" firstAttribute="bottom" secondItem="6aE-eL-Bzj" secondAttribute="bottom" constant="227" id="zZ1-B1-Y4y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JWu-zJ-nAv"/>
                     </view>
                     <connections>
@@ -163,44 +313,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0w-GZ-a8C">
-                                <rect key="frame" x="45" y="610" width="55" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planet-earth-1" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-4h-Q8Z">
+                                <rect key="frame" x="41" y="222" width="292" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0w-GZ-a8C" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="45" y="610" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log Out"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="logOutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vU4-j3-Ngz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyw-Fx-DQK">
-                                <rect key="frame" x="286" y="128" width="41" height="30"/>
+                                <rect key="frame" x="28" y="453" width="136" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Game"/>
+                                <state key="normal" title="Game" backgroundImage="banner1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="9Dk-Pf-3hh" kind="show" id="3bM-Rb-ICg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-HM-vQf">
-                                <rect key="frame" x="46" y="128" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Action"/>
-                                <connections>
-                                    <segue destination="54H-uU-RYj" kind="show" id="8LJ-0c-PnI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-eA-yob">
-                                <rect key="frame" x="278" y="307" width="45" height="30"/>
+                                <rect key="frame" x="222" y="447" width="137" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Article"/>
+                                <state key="normal" title="Article" backgroundImage="banner1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ILz-00-LqM" kind="show" id="XvG-YX-Poa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-WL-CPW">
-                                <rect key="frame" x="24" y="299" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Achievement"/>
-                                <connections>
-                                    <segue destination="YV0-Fe-pDs" kind="show" id="Fbb-oi-6O2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Point:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-Z8-vuj">
@@ -224,6 +374,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-WL-CPW">
+                                <rect key="frame" x="191" y="110" width="184" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Achievement" backgroundImage="banner1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YV0-Fe-pDs" kind="show" id="Fbb-oi-6O2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-HM-vQf">
+                                <rect key="frame" x="16" y="124" width="147" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Action" backgroundImage="banner1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="54H-uU-RYj" kind="show" id="8LJ-0c-PnI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -245,10 +415,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIM-U4-a8A">
-                                <rect key="frame" x="36" y="607" width="34" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean-cartoon-background_688458" translatesAutoresizingMaskIntoConstraints="NO" id="rql-jb-BVb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="海龟2" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-X2-zmm">
+                                <rect key="frame" x="0.0" y="162" width="375" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIM-U4-a8A" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="33" y="605" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="BbD-OH-4kO"/>
                                 </connections>
@@ -274,18 +459,68 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBy-hz-Hg5" customClass="PlasticButton" customModule="EcoAction" customModuleProvider="target">
+                                <rect key="frame" x="251" y="325" width="67" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="plastic-bag">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76l-fw-hVw" customClass="PlasticButton" customModule="EcoAction" customModuleProvider="target">
+                                <rect key="frame" x="123" y="395" width="67" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="plastic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-r7-0Jk" customClass="PlasticButton" customModule="EcoAction" customModuleProvider="target">
+                                <rect key="frame" x="223" y="222" width="67" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="plastic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUE-ov-iwh" customClass="PlasticButton" customModule="EcoAction" customModuleProvider="target">
+                                <rect key="frame" x="16" y="377" width="85" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="drink"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56E-b1-Kpc" customClass="PlasticButton" customModule="EcoAction" customModuleProvider="target">
+                                <rect key="frame" x="145" y="229" width="85" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="drink"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmT-2M-zrl" customClass="PlasticButton" customModule="EcoAction" customModuleProvider="target">
+                                <rect key="frame" x="64" y="248" width="67" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="plastic-bag">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rql-jb-BVb" firstAttribute="top" secondItem="q2d-lC-VCg" secondAttribute="top" id="2Tf-G6-G1p"/>
+                            <constraint firstItem="rql-jb-BVb" firstAttribute="bottom" secondItem="ujt-Zw-l16" secondAttribute="bottom" id="51Y-0u-Mqc"/>
+                            <constraint firstItem="ujt-Zw-l16" firstAttribute="trailing" secondItem="rql-jb-BVb" secondAttribute="trailing" id="aQz-W8-SLI"/>
+                            <constraint firstItem="rql-jb-BVb" firstAttribute="leading" secondItem="ujt-Zw-l16" secondAttribute="leading" id="d6i-UW-dYe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ujt-Zw-l16"/>
                     </view>
                     <connections>
+                        <outlet property="bottleBag1" destination="76l-fw-hVw" id="Zlq-Rk-RrS"/>
+                        <outlet property="bottleBag2" destination="hd5-r7-0Jk" id="0Gz-kf-sE6"/>
+                        <outlet property="cup1" destination="eUE-ov-iwh" id="GUA-fv-ucl"/>
+                        <outlet property="cup2" destination="56E-b1-Kpc" id="VHZ-o3-TBs"/>
                         <outlet property="nickname" destination="35f-ns-f1W" id="RfI-RR-Whd"/>
                         <outlet property="point" destination="sT9-v1-N6U" id="edx-Gj-KTU"/>
+                        <outlet property="yellowBag1" destination="zmT-2M-zrl" id="1OC-Eh-Wnz"/>
+                        <outlet property="yellowBag2" destination="vBy-hz-Hg5" id="gSC-Js-az3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0E-3z-qNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="-412"/>
+            <point key="canvasLocation" x="1676" y="-412.44377811094455"/>
         </scene>
         <!--Article View Controller-->
         <scene sceneID="Ahz-0P-ncM">
@@ -295,10 +530,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpM-Tx-1Eg">
-                                <rect key="frame" x="22" y="606" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpM-Tx-1Eg" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="22" y="606" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="Qer-DK-l2P"/>
                                 </connections>
@@ -377,10 +620,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPb-bY-kqt">
-                                <rect key="frame" x="44" y="617" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPb-bY-kqt" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="44" y="617" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="avH-Fe-A0J"/>
                                 </connections>
@@ -427,10 +678,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-Dw-PfZ">
-                                <rect key="frame" x="40" y="609" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-Dw-PfZ" customClass="FlatButton" customModule="SwiftyButton">
+                                <rect key="frame" x="40" y="609" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.075296498835086823" green="0.78031986951828003" blue="0.48401558399200439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.084322728216648102" green="0.70901685953140259" blue="0.45588582754135132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="DWB-bB-k8g"/>
                                 </connections>
@@ -613,11 +872,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="banner1" width="329" height="206.33332824707031"/>
+        <image name="drink" width="512" height="512"/>
+        <image name="ocean-cartoon-background_688458" width="392" height="648"/>
+        <image name="planet-earth" width="512" height="512"/>
+        <image name="planet-earth-1" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="plastic" width="512" height="512"/>
+        <image name="plastic-bag" width="512" height="512"/>
+        <image name="turtle" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="turtle-1" width="512" height="512"/>
         <image name="unchecked" width="50" height="50"/>
+        <image name="海龟2" width="1280" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="riN-qd-RPf"/>
-        <segue reference="ZKw-gb-N09"/>
+        <segue reference="3bM-Rb-ICg"/>
+        <segue reference="8LJ-0c-PnI"/>
+        <segue reference="BbD-OH-4kO"/>
         <segue reference="r9N-zi-p09"/>
     </inferredMetricsTieBreakers>
 </document>
