@@ -39,7 +39,7 @@ class LogInViewController: UIViewController , UITextFieldDelegate{
             if user != nil {
                 self.performSegue(withIdentifier: "login", sender: self)
             } else {
-                let alert = UIAlertController(title: "Error", message: "There is some mistake", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "Login failed", preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)

@@ -15,16 +15,12 @@ var ref: DatabaseReference! = Database.database().reference()
 
 class PlasticButton: UIButton {
     
-    var isOff: Bool
-    
     override init(frame: CGRect) {
-        self.isOff = false
         super.init(frame: frame)
         initButton()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.isOff = false
         super.init(coder: aDecoder)
         initButton()
     }
@@ -34,11 +30,7 @@ class PlasticButton: UIButton {
     }
     
     @objc func clearPlastic() {
-        if isOff {
-            return
-        }
-        self.setBackgroundImage(nil, for: .normal)
-        isOff = true
+        self.isHidden = true
         deductPoints()
     }
     

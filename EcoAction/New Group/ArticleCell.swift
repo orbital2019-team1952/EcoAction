@@ -10,10 +10,12 @@ import UIKit
 
 class ArticleCell: UITableViewCell {
 
+    @IBOutlet weak var articleIcon: UIImageView!
     @IBOutlet weak var articleTitleLabel: UILabel!
     
     func setArticle(article: Article) {
         articleTitleLabel.text = article.title
+        articleIcon.image = article.image
         
     }
 }
