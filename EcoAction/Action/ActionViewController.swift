@@ -15,13 +15,16 @@ class ActionViewController: UIViewController {
 
     @IBOutlet weak var nickname: UILabel!
     @IBOutlet weak var point: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     var ref: DatabaseReference! = Database.database().reference()
+    
+    var actions: [Action] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabel()
+        actions =  [Action(time: "201888849", prepare: true, reduce: true, reuse: false, recycle: true, turnOff: false)] //Action.readData()
         // Do any additional setup after loading the view.
-        readDate()
     }
     
 
@@ -43,43 +46,22 @@ class ActionViewController: UIViewController {
         })
         
     }
-    
-    func readDate() {
-        guard let userID = Auth.auth().currentUser?.uid else { return }
-        
-        ref.child("users/\(userID)/achievement").queryOrderedByKey().observeSingleEvent(of: .value, with: { (snapshot) in
-            let results = snapshot.value as! [String: Any]
-            let keyInOrder = results.keys.sorted(by: >)
-            var count = 10
-            for key in keyInOrder {
-                let action = results[key] as! [String: Any]
-                let timeInterval = action["timeInterval"] as! TimeInterval
-                let prepare = action["prepare your own lunchbox"] as! Bool
-                let reduce = action["reduce using plastic straw"] as! Bool
-                let reuse = action["reuse plastic bag or bring your own bag"] as! Bool
-                let recycle = action["recycle plastic or can or paper"] as! Bool
-                let turnOff = action["turn off the light when leaving"] as! Bool
-                
-                let date = self.dateToString(date: Date(timeIntervalSince1970: timeInterval))
-                count -= 1
-                if count > 0 {
-                    print("\(date)  \(timeInterval)")
-                    print("prepare  \(prepare)")
-                    print("reduce  \(reduce)")
-                    print("reuse  \(reuse)")
-                    print("recycle  \(recycle)")
-                    print("turnOff  \(turnOff)")
-                } else {
-                    break
-                }
-            }
-        })
-    }
-    
-    func dateToString(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        return formatter.string(from: date)
-    }
 
+}
+
+extension ActionViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return actions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let action = actions[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ActionCell") as! ActionCell
+        
+        cell.setAction(action: action)
+        
+        return cell
+    }
+    
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090113D622ED7C6900AD1DEE /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113D522ED7C6900AD1DEE /* ActionCell.swift */; };
+		090113DA22EDC61D00AD1DEE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113D922EDC61D00AD1DEE /* Action.swift */; };
 		09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914222995EF4007C52BB /* AppDelegate.swift */; };
 		09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914422995EF4007C52BB /* MenuViewController.swift */; };
 		09DC914822995EF4007C52BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC914622995EF4007C52BB /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		090113D522ED7C6900AD1DEE /* ActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
+		090113D922EDC61D00AD1DEE /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		09DC913F22995EF4007C52BB /* EcoAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC914222995EF4007C52BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DC914422995EF4007C52BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				EDA5250822C75CA10048D3F3 /* ActionViewController.swift */,
 				090113D522ED7C6900AD1DEE /* ActionCell.swift */,
+				090113D922EDC61D00AD1DEE /* Action.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				09F2194422C9B08A00707AFD /* AddActionViewController.swift in Sources */,
 				EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */,
 				EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */,
+				090113DA22EDC61D00AD1DEE /* Action.swift in Sources */,
 				09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */,
 				090113D622ED7C6900AD1DEE /* ActionCell.swift in Sources */,
 				ED21AF6722EB23CA00BC74AC /* PlasticButton.swift in Sources */,

@@ -860,6 +860,7 @@
                     <connections>
                         <outlet property="nickname" destination="6FK-yO-W1w" id="Ex6-Ye-ktK"/>
                         <outlet property="point" destination="Cr9-2G-idZ" id="Qwj-Ib-jFx"/>
+                        <outlet property="tableView" destination="4k0-Fx-C0r" id="ifX-nD-cU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6r-Cl-qZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1008,5 +1009,9 @@
         <image name="海龟2" width="1280" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="YwW-Bn-bn6"/>
+        <segue reference="riN-qd-RPf"/>
+        <segue reference="DWB-bB-k8g"/>
+        <segue reference="r9N-zi-p09"/>
     </inferredMetricsTieBreakers>
 </document>

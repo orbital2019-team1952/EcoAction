@@ -17,7 +17,33 @@ class ActionCell: UITableViewCell {
     @IBOutlet weak var recycleAct: UIImageView!
     @IBOutlet weak var turnOffLightAct: UIImageView!
 
-    func setAction(date: String) {
+    func setAction(action: Action) {
+        print(action.time)
+        time.text = action.time
+        prepareLunchBoxAct.image = #imageLiteral(resourceName: "lunch-box")
+        reduceStrawAct.image = #imageLiteral(resourceName: "straw")
+        reusePlasticBagAct.image = #imageLiteral(resourceName: "reuse")
+        recycleAct.image = #imageLiteral(resourceName: "recycle-sign")
+        turnOffLightAct.image = #imageLiteral(resourceName: "turn-off")
         
+        if !action.prepare {
+            prepareLunchBoxAct.isHidden = true
+        }
+        
+        if !action.reduce {
+            reduceStrawAct.isHidden = true
+        }
+        
+        if !action.reuse {
+            reusePlasticBagAct.isHidden = true
+        }
+        
+        if !action.recycle {
+            recycleAct.isHidden = true
+        }
+        
+        if !action.turnOff {
+            turnOffLightAct.isHidden = true
+        }
     }
 }
