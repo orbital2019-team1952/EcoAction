@@ -798,13 +798,50 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ltw-cv-Jm2">
-                                        <rect key="frame" x="0.0" y="28" width="284" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionCell" rowHeight="79" id="Ltw-cv-Jm2" customClass="ActionCell" customModule="EcoAction" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="284" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ltw-cv-Jm2" id="oyG-Xu-eJz">
-                                            <rect key="frame" x="0.0" y="0.0" width="284" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="78.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xut-y1-H1T">
+                                                    <rect key="frame" x="15" y="11" width="254" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtU-sZ-F9S">
+                                                    <rect key="frame" x="109" y="50" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqk-dd-vrp">
+                                                    <rect key="frame" x="140" y="50" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23v-B8-4wZ">
+                                                    <rect key="frame" x="171" y="50" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tc-Dh-QXR">
+                                                    <rect key="frame" x="202" y="50" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ax2-Uo-9Ub">
+                                                    <rect key="frame" x="233" y="50" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="prepareLunchBoxAct" destination="XtU-sZ-F9S" id="jYa-E1-JoP"/>
+                                            <outlet property="recycleAct" destination="5tc-Dh-QXR" id="nHI-Wi-2W4"/>
+                                            <outlet property="reduceStrawAct" destination="qqk-dd-vrp" id="3Vk-5z-ZEK"/>
+                                            <outlet property="reusePlasticBagAct" destination="23v-B8-4wZ" id="LyM-F8-cFX"/>
+                                            <outlet property="time" destination="xut-y1-H1T" id="OF7-i5-FHd"/>
+                                            <outlet property="turnOffLightAct" destination="Ax2-Uo-9Ub" id="npV-Yf-QRa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -971,8 +1008,5 @@
         <image name="海龟2" width="1280" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8LJ-0c-PnI"/>
-        <segue reference="Qer-DK-l2P"/>
-        <segue reference="r9N-zi-p09"/>
     </inferredMetricsTieBreakers>
 </document>

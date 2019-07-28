@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090113D622ED7C6900AD1DEE /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113D522ED7C6900AD1DEE /* ActionCell.swift */; };
 		09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914222995EF4007C52BB /* AppDelegate.swift */; };
 		09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914422995EF4007C52BB /* MenuViewController.swift */; };
 		09DC914822995EF4007C52BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC914622995EF4007C52BB /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090113D522ED7C6900AD1DEE /* ActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
 		09DC913F22995EF4007C52BB /* EcoAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC914222995EF4007C52BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DC914422995EF4007C52BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090113D422ED7C2600AD1DEE /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				EDA5250822C75CA10048D3F3 /* ActionViewController.swift */,
+				090113D522ED7C6900AD1DEE /* ActionCell.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
 		09043F1B5956BB9A20AF88E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +164,7 @@
 		09DC914122995EF4007C52BB /* EcoAction */ = {
 			isa = PBXGroup;
 			children = (
+				090113D422ED7C2600AD1DEE /* Action */,
 				ED21AF6522E9EA3500BC74AC /* Game */,
 				ED21AF5422E876FC00BC74AC /* New Group */,
 				09DC914222995EF4007C52BB /* AppDelegate.swift */,
@@ -167,7 +179,6 @@
 				09DC914B22995EF7007C52BB /* LaunchScreen.storyboard */,
 				ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */,
 				09DC914E22995EF7007C52BB /* Info.plist */,
-				EDA5250822C75CA10048D3F3 /* ActionViewController.swift */,
 				EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */,
 			);
 			path = EcoAction;
@@ -448,6 +459,7 @@
 				EDA5250922C75CA10048D3F3 /* ActionViewController.swift in Sources */,
 				EDA5250722C75C8C0048D3F3 /* ArticleViewController.swift in Sources */,
 				09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */,
+				090113D622ED7C6900AD1DEE /* ActionCell.swift in Sources */,
 				ED21AF6722EB23CA00BC74AC /* PlasticButton.swift in Sources */,
 				09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */,
 				ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */,
