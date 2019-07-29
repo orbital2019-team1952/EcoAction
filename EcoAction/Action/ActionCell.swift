@@ -26,6 +26,12 @@ class ActionCell: UITableViewCell {
         recycleAct.image = #imageLiteral(resourceName: "recycle-sign")
         turnOffLightAct.image = #imageLiteral(resourceName: "turn-off")
         
+        prepareLunchBoxAct.isHidden = false
+        reduceStrawAct.isHidden = false
+        reusePlasticBagAct.isHidden = false
+        recycleAct.isHidden = false
+        turnOffLightAct.isHidden = false
+        
         if !action.prepare {
             prepareLunchBoxAct.isHidden = true
         }
