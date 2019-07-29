@@ -102,13 +102,17 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>SwiftyButton.xcscheme_^#shared#^_</key>
+		<key>SwiftyButton.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
-		<key>TweeTextField.xcscheme_^#shared#^_</key>
+		<key>TweeTextField.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
