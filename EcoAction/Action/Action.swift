@@ -30,7 +30,7 @@ class Action {
         self.turnOff = turnOff
     }
     
-    class func readData(){
+    class func readData() {
         var ref: DatabaseReference! = Database.database().reference()
         guard let userID = Auth.auth().currentUser?.uid else { return }
         var tempActions: [Action] = []

@@ -12,14 +12,15 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class GameViewController: UIViewController {
-
-    @IBOutlet weak var yellowBag1: PlasticButton!
-    @IBOutlet weak var yellowBag2: PlasticButton!
-    @IBOutlet weak var bottleBag1: PlasticButton!
-    @IBOutlet weak var bottleBag2: PlasticButton!
-    @IBOutlet weak var cup1: PlasticButton!
-    @IBOutlet weak var cup2: PlasticButton!
     
+    @IBOutlet weak var bag1: PlasticButton!
+    @IBOutlet weak var bag2: PlasticButton!
+    @IBOutlet weak var bag3: PlasticButton!
+    @IBOutlet weak var straw1: PlasticButton!
+    @IBOutlet weak var straw2: PlasticButton!
+    @IBOutlet weak var straw3: PlasticButton!
+    @IBOutlet weak var bag4: PlasticButton!
+    @IBOutlet weak var straw4: PlasticButton!
     
     @IBOutlet weak var nickname: UILabel!
     @IBOutlet weak var point: UILabel!
