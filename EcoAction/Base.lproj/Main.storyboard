@@ -783,6 +783,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-ed-uyc" customClass="HCoreBarChart" customModule="CoreCharts">
+                                <rect key="frame" x="45" y="202" width="302" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVp-ex-8x0">
+                                <rect key="frame" x="42" y="112" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Personal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud7-ig-WmW">
+                                <rect key="frame" x="166" y="112" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Public"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0n-iY-1Li">
+                                <rect key="frame" x="104" y="164" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="7 days"/>
+                                <connections>
+                                    <action selector="toggleDuration:" destination="YV0-Fe-pDs" eventType="touchUpInside" id="TZ4-cw-uVB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNr-YG-ZEJ">
+                                <rect key="frame" x="221" y="164" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="30 days"/>
+                                <connections>
+                                    <action selector="toggleDuration:" destination="YV0-Fe-pDs" eventType="touchUpInside" id="yDW-cr-Osh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -799,8 +830,13 @@
                         <viewLayoutGuide key="safeArea" id="wdY-3L-ovz"/>
                     </view>
                     <connections>
+                        <outlet property="barChart" destination="lYU-ed-uyc" id="PO8-dh-fTj"/>
+                        <outlet property="forAll" destination="ud7-ig-WmW" id="4np-ea-nwZ"/>
                         <outlet property="nickname" destination="G85-Y6-fYP" id="64S-r3-WFb"/>
+                        <outlet property="personal" destination="dVp-ex-8x0" id="i6X-mz-tku"/>
                         <outlet property="point" destination="NTu-si-Wjh" id="5Zn-fj-Hzj"/>
+                        <outlet property="sevenDays" destination="R0n-iY-1Li" id="ugp-9Z-wta"/>
+                        <outlet property="thirtyDays" destination="jNr-YG-ZEJ" id="0g1-tG-QBe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSG-6C-FtC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1102,7 +1138,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="riN-qd-RPf"/>
-        <segue reference="DWB-bB-k8g"/>
+        <segue reference="avH-Fe-A0J"/>
         <segue reference="uhb-ab-p8M"/>
     </inferredMetricsTieBreakers>
 </document>
