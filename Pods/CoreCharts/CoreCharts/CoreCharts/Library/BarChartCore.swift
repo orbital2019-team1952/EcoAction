@@ -259,6 +259,7 @@ public class BarChartCore: UIView {
     
     public func reload() {
         drawSwitch = false
+        displayConfig.backgroundColor = UIColor.clear
         self.setNeedsDisplay()
     }
     

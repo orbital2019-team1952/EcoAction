@@ -15,7 +15,7 @@ public class HCoreBarChart: BarChartCore {
     
     override func onCreate(entries: [CoreChartEntry]) {
         
-        backgroundColor = UIColor.red
+        backgroundColor = UIColor.clear
         
         viewHeight = scrollView.frame.height
         viewWidth = scrollView.frame.width

@@ -107,7 +107,6 @@ class AddActionViewController: UIViewController {
     }
     
     func addToPublic(date: String, achievements:[String: Int]) {
-        ref.child("public/test").setValue("HI")
         
         ref.child("public").observeSingleEvent(of: .value, with: { (snapshot) in
             

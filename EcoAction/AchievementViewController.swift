@@ -133,7 +133,71 @@ class AchievementViewController: UIViewController, CoreChartViewDataSource {
                 tempAch.append(newEntry)
             }
             self.chartData = tempAch
-            self.barChart.setNeedsDisplay()
+            //self.barChart.setNeedsDisplay()
+            self.barChart.displayConfig.backgroundColor = UIColor.clear
+            self.barChart.reload()
+            self.barChart.displayConfig.backgroundColor = UIColor.clear
+        })
+    }
+    
+    func readPubicDate() {
+        var ref: DatabaseReference! = Database.database().reference()
+        ref.child("public").queryOrderedByKey().observeSingleEvent(of: .value, with: { (snapshot) in
+            let today = Date()
+            let date = self.turnTimeString(date: today)
+            let dformatter = DateFormatter()
+            dformatter.dateFormat = "yyyy-MM-dd"
+            let currentDate = dformatter.date(from: date)
+            
+            var lunchbox = 0
+            var straw = 0
+            var bag = 0
+            var recyc = 0
+            var light = 0
+            
+            let results = snapshot.value as! [String: Any]
+            let keyInOrder = results.keys.sorted(by: >)
+            var tempAch: [CoreChartEntry] = []
+            for key in keyInOrder {
+                let action = results[key] as! [String: Any]
+                
+                let pastDate = dformatter.date(from: key)
+                
+                let diffInDays = Calendar.current.dateComponents([.day], from: pastDate as! Date, to: currentDate as! Date).day
+                guard let diff = diffInDays else { return }
+                
+                let duration = self.sevenDays.isSelected ? 0 : 30
+                if diff > duration { break }
+                
+                let prepare = action["prepare your own lunchbox"] as! Int
+                let reduce = action["reduce using plastic straw"] as! Int
+                let reuse = action["reuse plastic bag or bring your own bag"] as! Int
+                let recycle = action["recycle plastic or can or paper"] as! Int
+                let turnOff = action["turn off the light when leaving"] as! Int
+                
+                lunchbox += prepare
+                straw += reduce
+                bag += reuse
+                recyc += recycle
+                light += turnOff
+            }
+            let title = ["prepare your own lunchbox", "reduce using plastic straw", "reuse plastic bag or bring your own bag", "recycle plastic or can or paper", "turn off the light when leaving"]
+            let num = [lunchbox, straw, bag, recyc, light]
+            
+            for index in 0..<title.count {
+                let newEntry = CoreChartEntry(id: "\(num[index])",
+                    barTitle: title[index],
+                    barHeight: Double(num[index]),
+                    barColor: self.rainbowColor())
+                
+                
+                tempAch.append(newEntry)
+            }
+            self.chartData = tempAch
+            //self.barChart.setNeedsDisplay()
+            self.barChart.displayConfig.backgroundColor = UIColor.clear
+            self.barChart.reload()
+            self.barChart.displayConfig.backgroundColor = UIColor.clear
         })
     }
     
@@ -148,19 +212,26 @@ class AchievementViewController: UIViewController, CoreChartViewDataSource {
         sevenDays.isHighlighted = !sevenDays.isHighlighted
         thirtyDays.isSelected = !thirtyDays.isSelected
         thirtyDays.isHighlighted = !thirtyDays.isHighlighted
-        readPersonalData()
+        if personal.isSelected {
+            readPersonalData()
+        } else {
+            readPubicDate()
+        }
+      
         //self.loadCoreChartData()
-        
-        barChart.displayConfig.backgroundColor = UIColor.clear
-        self.barChart.reload()
-        
-        
-        
         
     }
     
     @IBAction func toggleState(_ sender: UIButton) {
-        
+        personal.isSelected = !personal.isSelected
+        personal.isHighlighted = !personal.isHighlighted
+        forAll.isSelected = !forAll.isSelected
+        forAll.isHighlighted = !forAll.isHighlighted
+        if personal.isSelected {
+            readPersonalData()
+        } else {
+            readPubicDate()
+        }
     }
     
-}
+}  
