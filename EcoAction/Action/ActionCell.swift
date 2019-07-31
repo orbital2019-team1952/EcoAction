@@ -22,6 +22,7 @@ class ActionCell: UITableViewCell {
         
         var currentPoints = 0
         
+        self.selectionStyle = .none
         print(action.time)
         time.text = action.time
         prepareLunchBoxAct.image = #imageLiteral(resourceName: "lunch-box")
@@ -30,11 +31,11 @@ class ActionCell: UITableViewCell {
         recycleAct.image = #imageLiteral(resourceName: "recycle-sign")
         turnOffLightAct.image = #imageLiteral(resourceName: "turn-off")
         
-        /*prepareLunchBoxAct.isHidden = false
-        reduceStrawAct.isHidden = false
-        reusePlasticBagAct.isHidden = false
-        recycleAct.isHidden = false
-        turnOffLightAct.isHidden = false*/
+        prepareLunchBoxAct.alpha = 1
+        reduceStrawAct.alpha = 1
+        reusePlasticBagAct.alpha = 1
+        recycleAct.alpha = 1
+        turnOffLightAct.alpha = 1
         
         if !action.prepare {
             prepareLunchBoxAct.alpha = 0.1

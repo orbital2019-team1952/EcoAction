@@ -81,40 +81,47 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
-		<key>Pods-EcoAction.xcscheme</key>
+		<key>PMSuperButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
-		<key>Pods-EcoActionTests.xcscheme</key>
+		<key>Pods-EcoAction.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>Pods-EcoActionUITests.xcscheme</key>
+		<key>Pods-EcoActionTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>SwiftyButton.xcscheme</key>
+		<key>Pods-EcoActionUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
-		<key>TweeTextField.xcscheme</key>
+		<key>SwiftyButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>17</integer>
+		</dict>
+		<key>TweeTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
