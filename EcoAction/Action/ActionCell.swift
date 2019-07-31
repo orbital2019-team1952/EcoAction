@@ -16,8 +16,12 @@ class ActionCell: UITableViewCell {
     @IBOutlet weak var reusePlasticBagAct: UIImageView!
     @IBOutlet weak var recycleAct: UIImageView!
     @IBOutlet weak var turnOffLightAct: UIImageView!
-
+    @IBOutlet weak var pointsAdded: UILabel!
+    
     func setAction(action: Action) {
+        
+        var currentPoints = 0
+        
         print(action.time)
         time.text = action.time
         prepareLunchBoxAct.image = #imageLiteral(resourceName: "lunch-box")
@@ -26,30 +30,47 @@ class ActionCell: UITableViewCell {
         recycleAct.image = #imageLiteral(resourceName: "recycle-sign")
         turnOffLightAct.image = #imageLiteral(resourceName: "turn-off")
         
-        prepareLunchBoxAct.isHidden = false
+        /*prepareLunchBoxAct.isHidden = false
         reduceStrawAct.isHidden = false
         reusePlasticBagAct.isHidden = false
         recycleAct.isHidden = false
-        turnOffLightAct.isHidden = false
+        turnOffLightAct.isHidden = false*/
         
         if !action.prepare {
-            prepareLunchBoxAct.isHidden = true
+            prepareLunchBoxAct.alpha = 0.1
+            //prepareLunchBoxAct.isHidden = true
+        } else {
+            currentPoints += 5
         }
         
         if !action.reduce {
-            reduceStrawAct.isHidden = true
+            reduceStrawAct.alpha = 0.1
+            //reduceStrawAct.isHidden = true
+        } else {
+            currentPoints += 5
         }
         
         if !action.reuse {
-            reusePlasticBagAct.isHidden = true
+            reusePlasticBagAct.alpha = 0.1
+            //reusePlasticBagAct.isHidden = true
+        } else {
+            currentPoints += 5
         }
         
         if !action.recycle {
-            recycleAct.isHidden = true
+            recycleAct.alpha = 0.1
+            //recycleAct.isHidden = true
+        } else {
+            currentPoints += 5
         }
         
         if !action.turnOff {
-            turnOffLightAct.isHidden = true
+            turnOffLightAct.alpha = 0.1
+            //turnOffLightAct.isHidden = true
+        } else {
+            currentPoints += 5
         }
+        
+        pointsAdded.text = String(currentPoints) + " points"
     }
 }
