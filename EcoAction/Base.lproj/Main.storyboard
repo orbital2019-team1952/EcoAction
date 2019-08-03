@@ -472,7 +472,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean-cartoon-background_688458" translatesAutoresizingMaskIntoConstraints="NO" id="rql-jb-BVb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000011" height="667"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="海龟2" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-X2-zmm">
                                 <rect key="frame" x="0.0" y="162" width="375" height="389"/>
@@ -919,7 +919,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FK-yO-W1w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FK-yO-W1w">
                                 <rect key="frame" x="45" y="53" width="104" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="LHI-6e-aOV"/>
@@ -1247,13 +1247,23 @@
                                     <segue destination="54H-uU-RYj" kind="show" identifier="AddAction" id="06T-BY-Ghy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5 points per action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKo-23-wRM">
+                                <rect key="frame" x="105" y="534" width="165" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yuD-T4-R65" firstAttribute="bottom" secondItem="wm0-kR-CSd" secondAttribute="bottom" constant="40" id="Ect-H9-S5E"/>
+                            <constraint firstItem="wm0-kR-CSd" firstAttribute="top" secondItem="tKo-23-wRM" secondAttribute="bottom" constant="41" id="FTO-ce-a7Q"/>
                             <constraint firstItem="yuD-T4-R65" firstAttribute="trailing" secondItem="iQn-XV-tDS" secondAttribute="trailing" id="Iki-qP-q23"/>
                             <constraint firstItem="yuD-T4-R65" firstAttribute="bottom" secondItem="iQn-XV-tDS" secondAttribute="bottom" constant="158" id="Nmm-A1-8wb"/>
                             <constraint firstItem="yuD-T4-R65" firstAttribute="trailing" secondItem="MrE-Mw-8Se" secondAttribute="trailing" constant="30" id="PsD-78-hFT"/>
+                            <constraint firstItem="yuD-T4-R65" firstAttribute="trailing" secondItem="tKo-23-wRM" secondAttribute="trailing" constant="105" id="RME-jL-8Wy"/>
+                            <constraint firstItem="tKo-23-wRM" firstAttribute="leading" secondItem="yuD-T4-R65" secondAttribute="leading" constant="105" id="TvO-S6-ruC"/>
+                            <constraint firstItem="tKo-23-wRM" firstAttribute="top" secondItem="iQn-XV-tDS" secondAttribute="bottom" constant="25" id="Yw7-5H-n0W"/>
                             <constraint firstItem="wm0-kR-CSd" firstAttribute="leading" secondItem="yuD-T4-R65" secondAttribute="leading" constant="35" id="biY-hg-00c"/>
                             <constraint firstItem="iQn-XV-tDS" firstAttribute="leading" secondItem="vJA-TY-yHB" secondAttribute="leading" id="ek5-uo-0ch"/>
                             <constraint firstItem="iQn-XV-tDS" firstAttribute="top" secondItem="yuD-T4-R65" secondAttribute="top" constant="39" id="rFK-Ta-SVj"/>
@@ -1298,7 +1308,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8LJ-0c-PnI"/>
-        <segue reference="avH-Fe-A0J"/>
+        <segue reference="DWB-bB-k8g"/>
         <segue reference="uhb-ab-p8M"/>
     </inferredMetricsTieBreakers>
 </document>

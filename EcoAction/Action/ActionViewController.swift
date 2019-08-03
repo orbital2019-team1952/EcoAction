@@ -53,7 +53,7 @@ class ActionViewController: UIViewController {
         guard let userID = Auth.auth().currentUser?.uid else { return }
         
         ref.child("users/\(userID)/achievement").queryOrderedByKey().observeSingleEvent(of: .value, with: { (snapshot) in
-            let results = snapshot.value as! [String: Any]
+            guard let results = snapshot.value as? [String: Any] else { return } //changed
             let keyInOrder = results.keys.sorted(by: >)
             var tempAction: [Action] = []
             for key in keyInOrder {

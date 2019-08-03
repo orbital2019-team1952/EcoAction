@@ -92,7 +92,7 @@ class AchievementViewController: UIViewController, CoreChartViewDataSource {
             var recyc = 0
             var light = 0
             
-            let results = snapshot.value as! [String: Any]
+            guard let results = snapshot.value as? [String: Any] else { return } //changed
             let keyInOrder = results.keys.sorted(by: >)
             var tempAch: [CoreChartEntry] = []
             for key in keyInOrder {
