@@ -105,7 +105,7 @@ class AchievementViewController: UIViewController, CoreChartViewDataSource {
                 let diffInDays = Calendar.current.dateComponents([.day], from: pastDate as! Date, to: currentDate as! Date).day
                 guard let diff = diffInDays else { return }
                 
-                let duration = self.sevenDays.isSelected ? 0 : 30
+                let duration = self.sevenDays.isSelected ? 7 : 30
                 if diff > duration { break }
                 
                 let prepare = action["prepare your own lunchbox"] as! Bool
@@ -166,7 +166,7 @@ class AchievementViewController: UIViewController, CoreChartViewDataSource {
                 let diffInDays = Calendar.current.dateComponents([.day], from: pastDate as! Date, to: currentDate as! Date).day
                 guard let diff = diffInDays else { return }
                 
-                let duration = self.sevenDays.isSelected ? 0 : 30
+                let duration = self.sevenDays.isSelected ? 7 : 30
                 if diff > duration { break }
                 
                 let prepare = action["prepare your own lunchbox"] as! Int
