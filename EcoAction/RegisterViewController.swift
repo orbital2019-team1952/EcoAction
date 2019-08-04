@@ -76,7 +76,8 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
                 self.ref.child("users/\(userID)/points").setValue(10)
                 self.performSegue(withIdentifier: "signup", sender: self)
             } else {
-                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let errorMessage =  nickname != "" ? error?.localizedDescription : "Nickname is empty"
+                let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 
                 alertController.addAction(defaultAction)
