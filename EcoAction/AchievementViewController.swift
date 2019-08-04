@@ -92,33 +92,37 @@ class AchievementViewController: UIViewController, CoreChartViewDataSource {
             var recyc = 0
             var light = 0
             
-            guard let results = snapshot.value as? [String: Any] else { return } //changed
-            let keyInOrder = results.keys.sorted(by: >)
+            
             var tempAch: [CoreChartEntry] = []
-            for key in keyInOrder {
-                let action = results[key] as! [String: Any]
-                let timeInterval = action["timeInterval"] as! TimeInterval
+            if let results = snapshot.value as? [String: Any] {
+            //guard let results = snapshot.value as? [String: Any] else { return } //changed
+                let keyInOrder = results.keys.sorted(by: >)
                 
-                let past = Date(timeIntervalSince1970: timeInterval)
-                let pastDate = dformatter.date(from: self.turnTimeString(date: past))
+                for key in keyInOrder {
+                    let action = results[key] as! [String: Any]
+                    let timeInterval = action["timeInterval"] as! TimeInterval
+                    
+                    let past = Date(timeIntervalSince1970: timeInterval)
+                    let pastDate = dformatter.date(from: self.turnTimeString(date: past))
                 
-                let diffInDays = Calendar.current.dateComponents([.day], from: pastDate as! Date, to: currentDate as! Date).day
-                guard let diff = diffInDays else { return }
+                    let diffInDays = Calendar.current.dateComponents([.day], from: pastDate as! Date, to: currentDate as! Date).day
+                    guard let diff = diffInDays else { return }
                 
-                let duration = self.sevenDays.isSelected ? 7 : 30
-                if diff > duration { break }
+                    let duration = self.sevenDays.isSelected ? 7 : 30
+                    if diff > duration { break }
                 
-                let prepare = action["prepare your own lunchbox"] as! Bool
-                let reduce = action["reduce using plastic straw"] as! Bool
-                let reuse = action["reuse plastic bag or bring your own bag"] as! Bool
-                let recycle = action["recycle plastic or can or paper"] as! Bool
-                let turnOff = action["turn off the light when leaving"] as! Bool
+                    let prepare = action["prepare your own lunchbox"] as! Bool
+                    let reduce = action["reduce using plastic straw"] as! Bool
+                    let reuse = action["reuse plastic bag or bring your own bag"] as! Bool
+                    let recycle = action["recycle plastic or can or paper"] as! Bool
+                    let turnOff = action["turn off the light when leaving"] as! Bool
                 
-                lunchbox += (prepare ? 1 : 0)
-                straw += (reduce ? 1 : 0)
-                bag += (reuse ? 1 : 0)
-                recyc += (recycle ? 1 : 0)
-                light += (turnOff ? 1 : 0)
+                    lunchbox += (prepare ? 1 : 0)
+                    straw += (reduce ? 1 : 0)
+                    bag += (reuse ? 1 : 0)
+                    recyc += (recycle ? 1 : 0)
+                    light += (turnOff ? 1 : 0)
+                }
             }
             let title = ["prepare your own lunchbox", "reduce using plastic straw", "reuse plastic bag or bring your own bag", "recycle plastic or can or paper", "turn off the light when leaving"]
             let num = [lunchbox, straw, bag, recyc, light]
