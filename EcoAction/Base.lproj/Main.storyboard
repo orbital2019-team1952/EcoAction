@@ -463,6 +463,77 @@
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="17.541229385307346"/>
         </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="UtU-7s-xUy">
+            <objects>
+                <viewController storyboardIdentifier="sbPopUpID" id="n6q-4o-PXi" customClass="PopUpViewController" customModule="EcoAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oeO-O3-kKk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6P-gR-dYq">
+                                <rect key="frame" x="77.5" y="198.5" width="220" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save the Seaturtle!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJz-4C-Prv">
+                                        <rect key="frame" x="31.5" y="15" width="157" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.1253789554900481" green="0.67706585146602571" blue="0.20197532226795997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.69903912590066453" green="0.83885054545081339" blue="0.44111400822993962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Yr-nO-K7I">
+                                        <rect key="frame" x="14.5" y="59" width="191" height="152"/>
+                                        <color key="backgroundColor" red="0.99705451730000005" green="0.99689253239999998" blue="0.81299702129999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="152" id="tI6-ik-oNF"/>
+                                            <constraint firstAttribute="width" constant="191" id="uxm-cE-vqC"/>
+                                        </constraints>
+                                        <string key="text">The natural habitat of seaturtles are under the threaten of plastic bags and straws, use your points earned from daily actions to save their environment!</string>
+                                        <color key="textColor" red="0.22410456740000001" green="0.43361134629999998" blue="0.83885054550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99705451726913452" green="0.98457030373307886" blue="0.54082536785136315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="zJz-4C-Prv" firstAttribute="top" secondItem="A6P-gR-dYq" secondAttribute="top" constant="15" id="J8t-40-xiC"/>
+                                    <constraint firstItem="3Yr-nO-K7I" firstAttribute="centerX" secondItem="A6P-gR-dYq" secondAttribute="centerX" id="SDL-Of-MFk"/>
+                                    <constraint firstAttribute="width" constant="220" id="g1l-W2-UyR"/>
+                                    <constraint firstItem="3Yr-nO-K7I" firstAttribute="centerY" secondItem="A6P-gR-dYq" secondAttribute="centerY" id="iC2-Ez-44q"/>
+                                    <constraint firstItem="3Yr-nO-K7I" firstAttribute="top" secondItem="zJz-4C-Prv" secondAttribute="bottom" constant="14" id="jlk-Zm-4XS"/>
+                                    <constraint firstItem="zJz-4C-Prv" firstAttribute="centerX" secondItem="A6P-gR-dYq" secondAttribute="centerX" id="sr4-2I-KFR"/>
+                                    <constraint firstAttribute="height" constant="270" id="uce-Sg-F8K"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jww-jb-Z2M">
+                                <rect key="frame" x="167" y="429" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8393906264987856" green="0.99705451730000005" blue="0.51970962210303195" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.39336338991382525" green="0.51110355955965481" blue="0.93338876962661743" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopUp:" destination="n6q-4o-PXi" eventType="touchUpInside" id="jyH-9X-4pj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A6P-gR-dYq" firstAttribute="centerY" secondItem="oeO-O3-kKk" secondAttribute="centerY" id="AxU-a4-ft9"/>
+                            <constraint firstItem="A6P-gR-dYq" firstAttribute="centerX" secondItem="oeO-O3-kKk" secondAttribute="centerX" id="yWq-1h-yCP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tlz-WV-YTw"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="3Yr-nO-K7I" id="XKB-3u-pup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afh-DG-PT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629.5999999999999" y="-1083.5082458770617"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="Rxr-Zg-bOv">
             <objects>
@@ -472,7 +543,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean-cartoon-background_688458" translatesAutoresizingMaskIntoConstraints="NO" id="rql-jb-BVb">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000011" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="海龟2" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-X2-zmm">
                                 <rect key="frame" x="0.0" y="162" width="375" height="389"/>
@@ -571,6 +642,17 @@
                                     </button>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h3-Un-5LA">
+                                <rect key="frame" x="307" y="602" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="huK-ut-LCs"/>
+                                    <constraint firstAttribute="height" constant="24" id="rKx-au-Qjj"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="showPopUp:" destination="9Dk-Pf-3hh" eventType="touchUpInside" id="eNa-2a-Lj8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -583,15 +665,19 @@
                             <constraint firstAttribute="trailing" secondItem="rql-jb-BVb" secondAttribute="trailing" id="FGM-c7-lE7"/>
                             <constraint firstAttribute="bottom" secondItem="rKl-X2-zmm" secondAttribute="bottom" constant="116" id="Few-cL-U3g"/>
                             <constraint firstItem="ujt-Zw-l16" firstAttribute="trailing" secondItem="Ar6-uT-IDr" secondAttribute="trailing" constant="87" id="GLt-Zy-4Xb"/>
+                            <constraint firstItem="6h3-Un-5LA" firstAttribute="leading" secondItem="UIM-U4-a8A" secondAttribute="trailing" constant="202" id="GvP-KI-MNI"/>
                             <constraint firstItem="35f-ns-f1W" firstAttribute="top" secondItem="ujt-Zw-l16" secondAttribute="top" constant="33" id="HKX-wZ-zcN"/>
                             <constraint firstItem="UIM-U4-a8A" firstAttribute="leading" secondItem="ujt-Zw-l16" secondAttribute="leading" constant="40" id="Hic-W9-g1B"/>
+                            <constraint firstItem="ujt-Zw-l16" firstAttribute="bottom" secondItem="6h3-Un-5LA" secondAttribute="bottom" constant="43" id="LR9-gX-YeV"/>
                             <constraint firstItem="rKl-X2-zmm" firstAttribute="leading" secondItem="ujt-Zw-l16" secondAttribute="leading" id="PHr-bA-Mhc"/>
                             <constraint firstItem="ujt-Zw-l16" firstAttribute="bottom" secondItem="UIM-U4-a8A" secondAttribute="bottom" constant="35" id="YdR-MD-cP5"/>
                             <constraint firstItem="DDO-g0-xzD" firstAttribute="leading" secondItem="ujt-Zw-l16" secondAttribute="leading" id="aZ8-v9-03k"/>
                             <constraint firstItem="rql-jb-BVb" firstAttribute="top" secondItem="q2d-lC-VCg" secondAttribute="top" id="b8P-vy-Jsb"/>
                             <constraint firstItem="DDO-g0-xzD" firstAttribute="trailing" secondItem="ujt-Zw-l16" secondAttribute="trailing" id="jlg-9T-tUM"/>
                             <constraint firstItem="sT9-v1-N6U" firstAttribute="top" secondItem="ujt-Zw-l16" secondAttribute="top" constant="33" id="jyz-j1-iBE"/>
+                            <constraint firstItem="ujt-Zw-l16" firstAttribute="trailing" secondItem="6h3-Un-5LA" secondAttribute="trailing" constant="46" id="n8s-vy-6dm"/>
                             <constraint firstItem="DDO-g0-xzD" firstAttribute="top" secondItem="ujt-Zw-l16" secondAttribute="top" constant="103" id="pIG-dq-fzc"/>
+                            <constraint firstItem="6h3-Un-5LA" firstAttribute="top" secondItem="DDO-g0-xzD" secondAttribute="bottom" constant="12" id="qfy-tc-zCY"/>
                             <constraint firstItem="35f-ns-f1W" firstAttribute="leading" secondItem="ujt-Zw-l16" secondAttribute="leading" constant="45" id="rxw-Rb-TFk"/>
                             <constraint firstItem="Ar6-uT-IDr" firstAttribute="top" secondItem="ujt-Zw-l16" secondAttribute="top" constant="33" id="vNF-XX-VOL"/>
                             <constraint firstItem="sT9-v1-N6U" firstAttribute="leading" secondItem="Ar6-uT-IDr" secondAttribute="trailing" constant="2" id="zdy-mP-FP8"/>
@@ -1308,7 +1394,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8LJ-0c-PnI"/>
-        <segue reference="DWB-bB-k8g"/>
+        <segue reference="BbD-OH-4kO"/>
         <segue reference="uhb-ab-p8M"/>
     </inferredMetricsTieBreakers>
 </document>

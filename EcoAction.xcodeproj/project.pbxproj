@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		090113D622ED7C6900AD1DEE /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113D522ED7C6900AD1DEE /* ActionCell.swift */; };
 		090113DA22EDC61D00AD1DEE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113D922EDC61D00AD1DEE /* Action.swift */; };
+		090113E322FC14FD00AD1DEE /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113E222FC14FD00AD1DEE /* PopUpViewController.swift */; };
 		09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914222995EF4007C52BB /* AppDelegate.swift */; };
 		09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914422995EF4007C52BB /* MenuViewController.swift */; };
 		09DC914822995EF4007C52BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC914622995EF4007C52BB /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		090113D522ED7C6900AD1DEE /* ActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
 		090113D922EDC61D00AD1DEE /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		090113E222FC14FD00AD1DEE /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		09DC913F22995EF4007C52BB /* EcoAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC914222995EF4007C52BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DC914422995EF4007C52BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				ED21AF5D22E884BD00BC74AC /* GoogleService-Info.plist */,
 				09DC914E22995EF7007C52BB /* Info.plist */,
 				EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */,
+				090113E222FC14FD00AD1DEE /* PopUpViewController.swift */,
 			);
 			path = EcoAction;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				090113D622ED7C6900AD1DEE /* ActionCell.swift in Sources */,
 				ED21AF6722EB23CA00BC74AC /* PlasticButton.swift in Sources */,
 				09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */,
+				090113E322FC14FD00AD1DEE /* PopUpViewController.swift in Sources */,
 				ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */,
 				EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */,
 				ED21AF6322E88A4B00BC74AC /* Article.swift in Sources */,
