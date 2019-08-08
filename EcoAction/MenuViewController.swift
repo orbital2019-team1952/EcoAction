@@ -23,6 +23,15 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showInformation(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Information") as! InformationViewController
+        self.addChild(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParent: self)
+    }
+    
+    
     @IBAction func logOutAction(_ sender: UIButton) {
         if Auth.auth().currentUser != nil {
             do {
