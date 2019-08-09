@@ -18,6 +18,10 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var passwordTextField: UITextField!
     var ref: DatabaseReference! = Database.database().reference()
     
+    private var authUser : User? {
+        return Auth.auth().currentUser
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //emailTextField.text = "Email"
@@ -46,6 +50,30 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
         self.view.endEditing(true)
     }
     
+    func sendVerificationMail() {
+        if self.authUser != nil && !self.authUser!.isEmailVerified {
+            self.authUser!.sendEmailVerification(completion: { (error) in
+                if error == nil {
+                    self.performSegue(withIdentifier: "signup", sender: self)
+                } else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            })
+        }
+        else {
+            let alertController = UIAlertController(title: "Error", message: "The user is not available or already verified.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+    }
+    
     @IBAction func createAccountAction(_ sender: UIButton) {
         
         let email = emailTextField.text
@@ -72,9 +100,10 @@ class RegisterViewController: UIViewController , UITextFieldDelegate{
                 
                 self.ref.child("users/\(userID)/nickname").setValue(nickname)
                 self.ref.child("users/\(userID)/email").setValue(email)
-                self.ref.child("users/\(userID)/password").setValue(password)
+                //self.ref.child("users/\(userID)/password").setValue(password)
                 self.ref.child("users/\(userID)/points").setValue(10)
-                self.performSegue(withIdentifier: "signup", sender: self)
+                
+                self.sendVerificationMail()
             } else {
                 let errorMessage =  nickname != "" ? error?.localizedDescription : "Nickname is empty"
                 let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)

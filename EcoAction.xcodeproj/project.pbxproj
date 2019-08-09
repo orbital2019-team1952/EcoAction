@@ -11,6 +11,7 @@
 		090113DA22EDC61D00AD1DEE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113D922EDC61D00AD1DEE /* Action.swift */; };
 		090113E322FC14FD00AD1DEE /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113E222FC14FD00AD1DEE /* PopUpViewController.swift */; };
 		090113E522FC247D00AD1DEE /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113E422FC247D00AD1DEE /* InformationViewController.swift */; };
+		090113E722FDA0E500AD1DEE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090113E622FDA0E500AD1DEE /* ResetPasswordViewController.swift */; };
 		09DC914322995EF4007C52BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914222995EF4007C52BB /* AppDelegate.swift */; };
 		09DC914522995EF4007C52BB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC914422995EF4007C52BB /* MenuViewController.swift */; };
 		09DC914822995EF4007C52BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DC914622995EF4007C52BB /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		090113D922EDC61D00AD1DEE /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		090113E222FC14FD00AD1DEE /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		090113E422FC247D00AD1DEE /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		090113E622FDA0E500AD1DEE /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		09DC913F22995EF4007C52BB /* EcoAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DC914222995EF4007C52BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DC914422995EF4007C52BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				EDA5250A22C75CB50048D3F3 /* AchievementViewController.swift */,
 				090113E222FC14FD00AD1DEE /* PopUpViewController.swift */,
 				090113E422FC247D00AD1DEE /* InformationViewController.swift */,
+				090113E622FDA0E500AD1DEE /* ResetPasswordViewController.swift */,
 			);
 			path = EcoAction;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				090113E322FC14FD00AD1DEE /* PopUpViewController.swift in Sources */,
 				ED21AF6422E88A4B00BC74AC /* ArticleCell.swift in Sources */,
 				EDA5250522C75C680048D3F3 /* GameViewController.swift in Sources */,
+				090113E722FDA0E500AD1DEE /* ResetPasswordViewController.swift in Sources */,
 				ED21AF6322E88A4B00BC74AC /* Article.swift in Sources */,
 				09DC9175229BAA3B007C52BB /* StartViewController.swift in Sources */,
 				09F2194622E59ACF00707AFD /* CheckButton.swift in Sources */,

@@ -48,15 +48,24 @@ class LogInViewController: UIViewController , UITextFieldDelegate{
     
     @IBAction func loginButton(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            if user != nil {
+            if user != nil && (user?.user.isEmailVerified)! {
                 self.performSegue(withIdentifier: "login", sender: self)
             } else {
-                let alert = UIAlertController(title: "Error", message: "Login failed", preferredStyle: .alert)
+                let errorMessage =  error != nil ? error?.localizedDescription : "Not Verified"
+                let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             }
         }
+    }
+    
+    @IBAction func showPopUp(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Reset") as! ResetPasswordViewController
+        self.addChild(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParent: self)
     }
     
     
