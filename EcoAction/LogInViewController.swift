@@ -15,6 +15,9 @@ class LogInViewController: UIViewController , UITextFieldDelegate{
     
     @IBOutlet weak var emailTextField: TweePlaceholderTextField!
     @IBOutlet weak var passwordTextField: TweePlaceholderTextField!
+    private var authUser : User? {
+        return Auth.auth().currentUser
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,12 +49,39 @@ class LogInViewController: UIViewController , UITextFieldDelegate{
         self.view.endEditing(true)
     }
     
+    func sendVerificationMail() {
+        if self.authUser != nil && !self.authUser!.isEmailVerified {
+            self.authUser!.sendEmailVerification(completion: { (error) in
+                if error == nil {
+                    self.performSegue(withIdentifier: "signup", sender: self)
+                } else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            })
+        }
+        else {
+            let alertController = UIAlertController(title: "Error", message: "The user is not available or already verified.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+    }
+    
     @IBAction func loginButton(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if user != nil && (user?.user.isEmailVerified)! {
                 self.performSegue(withIdentifier: "login", sender: self)
             } else {
                 let errorMessage =  error != nil ? error?.localizedDescription : "Not Verified"
+                if error == nil {
+                    self.sendVerificationMail()
+                }
                 let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(okButton)
