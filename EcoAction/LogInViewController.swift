@@ -56,7 +56,7 @@ class LogInViewController: UIViewController , UITextFieldDelegate{
             if user != nil && (user?.user.isEmailVerified)! {
                 self.performSegue(withIdentifier: "login", sender: self)
             } else {
-                let errorMessage =  error != nil ? error?.localizedDescription : "Not Verified"
+                let errorMessage =  error != nil ? error?.localizedDescription : "Not Verified. Go to check verification email again."
                 if error == nil {
                     user?.user.sendEmailVerification(completion: { (error) in
                         if error != nil {
