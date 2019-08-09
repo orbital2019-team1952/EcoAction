@@ -486,6 +486,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6P-gR-dYq">
                                 <rect key="frame" x="77.5" y="198.5" width="220" height="270"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jww-jb-Z2M">
+                                        <rect key="frame" x="89.5" y="224" width="41" height="30"/>
+                                        <color key="backgroundColor" red="0.8393906264987856" green="0.99705451730000005" blue="0.51970962210303195" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SpM-5g-9s6"/>
+                                            <constraint firstAttribute="width" constant="41" id="l1e-og-VrB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="0.39336338991382525" green="0.51110355955965481" blue="0.93338876962661743" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePopUp:" destination="n6q-4o-PXi" eventType="touchUpInside" id="jyH-9X-4pj"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save the Seaturtle!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJz-4C-Prv">
                                         <rect key="frame" x="31.5" y="15" width="157" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -509,6 +524,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.99705451726913452" green="0.98457030373307886" blue="0.54082536785136315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Jww-jb-Z2M" secondAttribute="bottom" constant="16" id="1dy-JT-tFs"/>
+                                    <constraint firstItem="Jww-jb-Z2M" firstAttribute="centerX" secondItem="A6P-gR-dYq" secondAttribute="centerX" id="9Ym-qE-oZh"/>
                                     <constraint firstItem="zJz-4C-Prv" firstAttribute="top" secondItem="A6P-gR-dYq" secondAttribute="top" constant="15" id="J8t-40-xiC"/>
                                     <constraint firstItem="3Yr-nO-K7I" firstAttribute="centerX" secondItem="A6P-gR-dYq" secondAttribute="centerX" id="SDL-Of-MFk"/>
                                     <constraint firstAttribute="width" constant="220" id="g1l-W2-UyR"/>
@@ -518,18 +535,6 @@
                                     <constraint firstAttribute="height" constant="270" id="uce-Sg-F8K"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jww-jb-Z2M">
-                                <rect key="frame" x="167" y="429" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.8393906264987856" green="0.99705451730000005" blue="0.51970962210303195" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleColor" red="0.39336338991382525" green="0.51110355955965481" blue="0.93338876962661743" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="closePopUp:" destination="n6q-4o-PXi" eventType="touchUpInside" id="jyH-9X-4pj"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
