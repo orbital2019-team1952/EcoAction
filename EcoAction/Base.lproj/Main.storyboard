@@ -347,7 +347,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="createAccountAction:" destination="m02-Vh-n5X" eventType="touchUpInside" id="dKE-Oa-rjx"/>
-                                    <segue destination="cSE-R4-bQR" kind="show" identifier="signup" id="o2g-3C-X0C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-bc-Wj0" customClass="FlatButton" customModule="SwiftyButton">
@@ -414,6 +413,7 @@
                         <outlet property="emailTextField" destination="EvR-eA-ASy" id="4LG-1g-py5"/>
                         <outlet property="nicknameTextField" destination="l0s-5U-0Ri" id="YUH-QN-sZZ"/>
                         <outlet property="passwordTextField" destination="6aE-eL-Bzj" id="1sg-3n-Dua"/>
+                        <segue destination="cSE-R4-bQR" kind="show" identifier="signup" id="Jc7-Rh-aa0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IwZ-YU-CHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -664,7 +664,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean-cartoon-background_688458" translatesAutoresizingMaskIntoConstraints="NO" id="rql-jb-BVb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000011" height="667"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="海龟2" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-X2-zmm">
                                 <rect key="frame" x="0.0" y="162" width="375" height="389"/>
@@ -1513,7 +1513,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bpu-8J-pFO">
                                         <rect key="frame" x="14" y="51" width="215" height="183"/>
                                         <color key="backgroundColor" red="0.99705451730000005" green="0.99689253239999998" blue="0.81299702129999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <mutableString key="text">Welcome to EcoAction! We hope you can develop a habit of making our environment better. This is a simple introduction to the different functions.
+                                        <string key="text">Welcome to EcoAction! We hope you can develop a habit of making our environment better. This is a simple introduction to the different functions.
 Go to:
 
 Action – Record your eco-friendly action in today, also show your past action history.
@@ -1525,7 +1525,7 @@ Game – Use your points earned from doing actions to play the game.
 Articles – Read articles that share more information related to our environment.
 
 We hope you can enjoy our app!
-</mutableString>
+</string>
                                         <color key="textColor" red="0.1253789555" green="0.67706585149999998" blue="0.20197532230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1600,7 +1600,7 @@ We hope you can enjoy our app!
     <inferredMetricsTieBreakers>
         <segue reference="8LJ-0c-PnI"/>
         <segue reference="OMP-F1-tqZ"/>
-        <segue reference="o2g-3C-X0C"/>
+        <segue reference="Jc7-Rh-aa0"/>
         <segue reference="r9N-zi-p09"/>
     </inferredMetricsTieBreakers>
 </document>
